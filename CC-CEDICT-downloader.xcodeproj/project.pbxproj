@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85088ED21C4A543A00396A1B /* Chinese_entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088EC71C4A543A00396A1B /* Chinese_entry+CoreDataProperties.m */; };
+		85088ED31C4A543A00396A1B /* Chinese_entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088EC91C4A543A00396A1B /* Chinese_entry.m */; };
+		85088ED41C4A543A00396A1B /* English_entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088ECB1C4A543A00396A1B /* English_entry+CoreDataProperties.m */; };
+		85088ED51C4A543A00396A1B /* English_entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088ECD1C4A543A00396A1B /* English_entry.m */; };
+		85088ED61C4A543A00396A1B /* Entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088ECF1C4A543A00396A1B /* Entry+CoreDataProperties.m */; };
+		85088ED71C4A543A00396A1B /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088ED11C4A543A00396A1B /* Entry.m */; };
+		85C8B78D1BC155AA004E5F64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C8B78C1BC155AA004E5F64 /* main.m */; };
+		85C8B7901BC155AA004E5F64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C8B78F1BC155AA004E5F64 /* AppDelegate.m */; };
+		85C8B7931BC155AA004E5F64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C8B7921BC155AA004E5F64 /* ViewController.m */; };
+		85C8B7961BC155AA004E5F64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C8B7941BC155AA004E5F64 /* Main.storyboard */; };
+		85C8B7981BC155AA004E5F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85C8B7971BC155AA004E5F64 /* Assets.xcassets */; };
+		85C8B79B1BC155AA004E5F64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C8B7991BC155AA004E5F64 /* LaunchScreen.storyboard */; };
+		85C8B7A61BC155AA004E5F64 /* CC_CEDICT_downloaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C8B7A51BC155AA004E5F64 /* CC_CEDICT_downloaderTests.m */; };
+		85C8B7B21BC155C9004E5F64 /* CC-CEDICT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85C8B7B01BC155C9004E5F64 /* CC-CEDICT.xcdatamodeld */; };
+		B266611C451BB23C580D3D96 /* libPods-CC-CEDICT-downloader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A912F4C344E677A89D704762 /* libPods-CC-CEDICT-downloader.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85C8B7A21BC155AA004E5F64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85C8B7801BC155AA004E5F64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85C8B7871BC155AA004E5F64;
+			remoteInfo = "CC-CEDICT-downloader";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1FB212029E72AAC6AD2A0B61 /* Pods-CC-CEDICT-downloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CC-CEDICT-downloader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CC-CEDICT-downloader/Pods-CC-CEDICT-downloader.debug.xcconfig"; sourceTree = "<group>"; };
+		85088EC61C4A543A00396A1B /* Chinese_entry+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Chinese_entry+CoreDataProperties.h"; sourceTree = "<group>"; };
+		85088EC71C4A543A00396A1B /* Chinese_entry+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Chinese_entry+CoreDataProperties.m"; sourceTree = "<group>"; };
+		85088EC81C4A543A00396A1B /* Chinese_entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chinese_entry.h; sourceTree = "<group>"; };
+		85088EC91C4A543A00396A1B /* Chinese_entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chinese_entry.m; sourceTree = "<group>"; };
+		85088ECA1C4A543A00396A1B /* English_entry+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "English_entry+CoreDataProperties.h"; sourceTree = "<group>"; };
+		85088ECB1C4A543A00396A1B /* English_entry+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "English_entry+CoreDataProperties.m"; sourceTree = "<group>"; };
+		85088ECC1C4A543A00396A1B /* English_entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = English_entry.h; sourceTree = "<group>"; };
+		85088ECD1C4A543A00396A1B /* English_entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = English_entry.m; sourceTree = "<group>"; };
+		85088ECE1C4A543A00396A1B /* Entry+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Entry+CoreDataProperties.h"; sourceTree = "<group>"; };
+		85088ECF1C4A543A00396A1B /* Entry+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Entry+CoreDataProperties.m"; sourceTree = "<group>"; };
+		85088ED01C4A543A00396A1B /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		85088ED11C4A543A00396A1B /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
+		85C8B7881BC155AA004E5F64 /* CC-CEDICT-downloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CC-CEDICT-downloader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C8B78C1BC155AA004E5F64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85C8B78E1BC155AA004E5F64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		85C8B78F1BC155AA004E5F64 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		85C8B7911BC155AA004E5F64 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		85C8B7921BC155AA004E5F64 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		85C8B7951BC155AA004E5F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85C8B7971BC155AA004E5F64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85C8B79A1BC155AA004E5F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85C8B79C1BC155AA004E5F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85C8B7A11BC155AA004E5F64 /* CC-CEDICT-downloaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CC-CEDICT-downloaderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C8B7A51BC155AA004E5F64 /* CC_CEDICT_downloaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CC_CEDICT_downloaderTests.m; sourceTree = "<group>"; };
+		85C8B7A71BC155AA004E5F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85C8B7B11BC155C9004E5F64 /* CC-CEDICT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CC-CEDICT.xcdatamodel"; sourceTree = "<group>"; };
+		A912F4C344E677A89D704762 /* libPods-CC-CEDICT-downloader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CC-CEDICT-downloader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26D03E840BF3A2B3EEA7B9A /* Pods-CC-CEDICT-downloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CC-CEDICT-downloader.release.xcconfig"; path = "Pods/Target Support Files/Pods-CC-CEDICT-downloader/Pods-CC-CEDICT-downloader.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85C8B7851BC155AA004E5F64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B266611C451BB23C580D3D96 /* libPods-CC-CEDICT-downloader.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C8B79E1BC155AA004E5F64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85088EC51C4A542700396A1B /* Core data */ = {
+			isa = PBXGroup;
+			children = (
+				85088EC61C4A543A00396A1B /* Chinese_entry+CoreDataProperties.h */,
+				85088EC71C4A543A00396A1B /* Chinese_entry+CoreDataProperties.m */,
+				85088EC81C4A543A00396A1B /* Chinese_entry.h */,
+				85088EC91C4A543A00396A1B /* Chinese_entry.m */,
+				85088ECA1C4A543A00396A1B /* English_entry+CoreDataProperties.h */,
+				85088ECB1C4A543A00396A1B /* English_entry+CoreDataProperties.m */,
+				85088ECC1C4A543A00396A1B /* English_entry.h */,
+				85088ECD1C4A543A00396A1B /* English_entry.m */,
+				85088ECE1C4A543A00396A1B /* Entry+CoreDataProperties.h */,
+				85088ECF1C4A543A00396A1B /* Entry+CoreDataProperties.m */,
+				85088ED01C4A543A00396A1B /* Entry.h */,
+				85088ED11C4A543A00396A1B /* Entry.m */,
+			);
+			name = "Core data";
+			sourceTree = "<group>";
+		};
+		85C8B77F1BC155AA004E5F64 = {
+			isa = PBXGroup;
+			children = (
+				85C8B78A1BC155AA004E5F64 /* CC-CEDICT-downloader */,
+				85C8B7A41BC155AA004E5F64 /* CC-CEDICT-downloaderTests */,
+				85C8B7891BC155AA004E5F64 /* Products */,
+				A6886455715D43FB2D54DDFF /* Pods */,
+				BF63B3AE55D029DB516EE5B3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		85C8B7891BC155AA004E5F64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85C8B7881BC155AA004E5F64 /* CC-CEDICT-downloader.app */,
+				85C8B7A11BC155AA004E5F64 /* CC-CEDICT-downloaderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85C8B78A1BC155AA004E5F64 /* CC-CEDICT-downloader */ = {
+			isa = PBXGroup;
+			children = (
+				85088EC51C4A542700396A1B /* Core data */,
+				85C8B78E1BC155AA004E5F64 /* AppDelegate.h */,
+				85C8B78F1BC155AA004E5F64 /* AppDelegate.m */,
+				85C8B7911BC155AA004E5F64 /* ViewController.h */,
+				85C8B7921BC155AA004E5F64 /* ViewController.m */,
+				85C8B7941BC155AA004E5F64 /* Main.storyboard */,
+				85C8B7971BC155AA004E5F64 /* Assets.xcassets */,
+				85C8B7991BC155AA004E5F64 /* LaunchScreen.storyboard */,
+				85C8B79C1BC155AA004E5F64 /* Info.plist */,
+				85C8B7B01BC155C9004E5F64 /* CC-CEDICT.xcdatamodeld */,
+				85C8B78B1BC155AA004E5F64 /* Supporting Files */,
+			);
+			path = "CC-CEDICT-downloader";
+			sourceTree = "<group>";
+		};
+		85C8B78B1BC155AA004E5F64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85C8B78C1BC155AA004E5F64 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85C8B7A41BC155AA004E5F64 /* CC-CEDICT-downloaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				85C8B7A51BC155AA004E5F64 /* CC_CEDICT_downloaderTests.m */,
+				85C8B7A71BC155AA004E5F64 /* Info.plist */,
+			);
+			path = "CC-CEDICT-downloaderTests";
+			sourceTree = "<group>";
+		};
+		A6886455715D43FB2D54DDFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FB212029E72AAC6AD2A0B61 /* Pods-CC-CEDICT-downloader.debug.xcconfig */,
+				B26D03E840BF3A2B3EEA7B9A /* Pods-CC-CEDICT-downloader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BF63B3AE55D029DB516EE5B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A912F4C344E677A89D704762 /* libPods-CC-CEDICT-downloader.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85C8B7871BC155AA004E5F64 /* CC-CEDICT-downloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C8B7AA1BC155AA004E5F64 /* Build configuration list for PBXNativeTarget "CC-CEDICT-downloader" */;
+			buildPhases = (
+				06C75C00428263037FAE2B80 /* Check Pods Manifest.lock */,
+				85C8B7841BC155AA004E5F64 /* Sources */,
+				85C8B7851BC155AA004E5F64 /* Frameworks */,
+				85C8B7861BC155AA004E5F64 /* Resources */,
+				C648A29998949E5D749E07E6 /* Embed Pods Frameworks */,
+				C5CDB0EC8909C059CDFBBCA8 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CC-CEDICT-downloader";
+			productName = "CC-CEDICT-downloader";
+			productReference = 85C8B7881BC155AA004E5F64 /* CC-CEDICT-downloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85C8B7A01BC155AA004E5F64 /* CC-CEDICT-downloaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C8B7AD1BC155AA004E5F64 /* Build configuration list for PBXNativeTarget "CC-CEDICT-downloaderTests" */;
+			buildPhases = (
+				85C8B79D1BC155AA004E5F64 /* Sources */,
+				85C8B79E1BC155AA004E5F64 /* Frameworks */,
+				85C8B79F1BC155AA004E5F64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85C8B7A31BC155AA004E5F64 /* PBXTargetDependency */,
+			);
+			name = "CC-CEDICT-downloaderTests";
+			productName = "CC-CEDICT-downloaderTests";
+			productReference = 85C8B7A11BC155AA004E5F64 /* CC-CEDICT-downloaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85C8B7801BC155AA004E5F64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					85C8B7871BC155AA004E5F64 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					85C8B7A01BC155AA004E5F64 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 85C8B7871BC155AA004E5F64;
+					};
+				};
+			};
+			buildConfigurationList = 85C8B7831BC155AA004E5F64 /* Build configuration list for PBXProject "CC-CEDICT-downloader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85C8B77F1BC155AA004E5F64;
+			productRefGroup = 85C8B7891BC155AA004E5F64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85C8B7871BC155AA004E5F64 /* CC-CEDICT-downloader */,
+				85C8B7A01BC155AA004E5F64 /* CC-CEDICT-downloaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85C8B7861BC155AA004E5F64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C8B79B1BC155AA004E5F64 /* LaunchScreen.storyboard in Resources */,
+				85C8B7981BC155AA004E5F64 /* Assets.xcassets in Resources */,
+				85C8B7961BC155AA004E5F64 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C8B79F1BC155AA004E5F64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06C75C00428263037FAE2B80 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C5CDB0EC8909C059CDFBBCA8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CC-CEDICT-downloader/Pods-CC-CEDICT-downloader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C648A29998949E5D749E07E6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CC-CEDICT-downloader/Pods-CC-CEDICT-downloader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85C8B7841BC155AA004E5F64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C8B7931BC155AA004E5F64 /* ViewController.m in Sources */,
+				85C8B7B21BC155C9004E5F64 /* CC-CEDICT.xcdatamodeld in Sources */,
+				85C8B7901BC155AA004E5F64 /* AppDelegate.m in Sources */,
+				85088ED41C4A543A00396A1B /* English_entry+CoreDataProperties.m in Sources */,
+				85C8B78D1BC155AA004E5F64 /* main.m in Sources */,
+				85088ED61C4A543A00396A1B /* Entry+CoreDataProperties.m in Sources */,
+				85088ED71C4A543A00396A1B /* Entry.m in Sources */,
+				85088ED51C4A543A00396A1B /* English_entry.m in Sources */,
+				85088ED31C4A543A00396A1B /* Chinese_entry.m in Sources */,
+				85088ED21C4A543A00396A1B /* Chinese_entry+CoreDataProperties.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C8B79D1BC155AA004E5F64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C8B7A61BC155AA004E5F64 /* CC_CEDICT_downloaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85C8B7A31BC155AA004E5F64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85C8B7871BC155AA004E5F64 /* CC-CEDICT-downloader */;
+			targetProxy = 85C8B7A21BC155AA004E5F64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85C8B7941BC155AA004E5F64 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85C8B7951BC155AA004E5F64 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		85C8B7991BC155AA004E5F64 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85C8B79A1BC155AA004E5F64 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85C8B7A81BC155AA004E5F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		85C8B7A91BC155AA004E5F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85C8B7AB1BC155AA004E5F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FB212029E72AAC6AD2A0B61 /* Pods-CC-CEDICT-downloader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "CC-CEDICT-downloader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.klurig.CC-CEDICT-downloader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		85C8B7AC1BC155AA004E5F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B26D03E840BF3A2B3EEA7B9A /* Pods-CC-CEDICT-downloader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "CC-CEDICT-downloader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.klurig.CC-CEDICT-downloader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		85C8B7AE1BC155AA004E5F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "CC-CEDICT-downloaderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.klurig.CC-CEDICT-downloaderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CC-CEDICT-downloader.app/CC-CEDICT-downloader";
+			};
+			name = Debug;
+		};
+		85C8B7AF1BC155AA004E5F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "CC-CEDICT-downloaderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.klurig.CC-CEDICT-downloaderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CC-CEDICT-downloader.app/CC-CEDICT-downloader";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85C8B7831BC155AA004E5F64 /* Build configuration list for PBXProject "CC-CEDICT-downloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C8B7A81BC155AA004E5F64 /* Debug */,
+				85C8B7A91BC155AA004E5F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85C8B7AA1BC155AA004E5F64 /* Build configuration list for PBXNativeTarget "CC-CEDICT-downloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C8B7AB1BC155AA004E5F64 /* Debug */,
+				85C8B7AC1BC155AA004E5F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85C8B7AD1BC155AA004E5F64 /* Build configuration list for PBXNativeTarget "CC-CEDICT-downloaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C8B7AE1BC155AA004E5F64 /* Debug */,
+				85C8B7AF1BC155AA004E5F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		85C8B7B01BC155C9004E5F64 /* CC-CEDICT.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				85C8B7B11BC155C9004E5F64 /* CC-CEDICT.xcdatamodel */,
+			);
+			currentVersion = 85C8B7B11BC155C9004E5F64 /* CC-CEDICT.xcdatamodel */;
+			path = "CC-CEDICT.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 85C8B7801BC155AA004E5F64 /* Project object */;
+}

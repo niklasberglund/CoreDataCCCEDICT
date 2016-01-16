@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15C50" minimumToolsVersion="Xcode 7.0">
+    <entity name="Chinese_entry" representedClassName="Chinese_entry" syncable="YES">
+        <attribute name="pinyin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="simplified" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="traditional" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="inEntry" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Entry" inverseName="inChinese" inverseEntity="Entry" syncable="YES"/>
+    </entity>
+    <entity name="English_entry" representedClassName="English_entry" syncable="YES">
+        <attribute name="english" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="inEntry" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Entry" inverseName="inEnglish" inverseEntity="Entry" syncable="YES"/>
+    </entity>
+    <entity name="Entry" representedClassName="Entry" syncable="YES">
+        <attribute name="added" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="modified" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="inChinese" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Chinese_entry" inverseName="inEntry" inverseEntity="Chinese_entry" syncable="YES"/>
+        <relationship name="inEnglish" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="English_entry" inverseName="inEntry" inverseEntity="English_entry" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Chinese_entry" positionX="106" positionY="-319" width="128" height="103"/>
+        <element name="English_entry" positionX="106" positionY="-63" width="128" height="73"/>
+        <element name="Entry" positionX="-128" positionY="-219" width="128" height="103"/>
+    </elements>
+</model>
