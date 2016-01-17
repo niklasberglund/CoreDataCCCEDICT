@@ -4,7 +4,7 @@
 # use_frameworks!
 
 target 'CC-CEDICT-downloader' do
-
+    pod 'GZIP'
 end
 
 target 'CC-CEDICT-downloaderTests' do
