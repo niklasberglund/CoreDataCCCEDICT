@@ -57,7 +57,7 @@
 }
 
 #pragma mark - CC-CEDICT download
-- (void)getLatestDatabaseInfoOnCompletion:(void (^)(NSDictionary *databaseInfo, NSError *error))completionBlock
+- (void)getLatestDataInfoOnCompletion:(void (^)(NSDictionary *databaseInfo, NSError *error))completionBlock
 {
     NSError *error;
     NSString *result = [NSString stringWithContentsOfURL:[NSURL URLWithString:@"https://www.mdbg.net/chindict/chindict.php?page=cc-cedict"] encoding:NSUTF8StringEncoding error:&error];
