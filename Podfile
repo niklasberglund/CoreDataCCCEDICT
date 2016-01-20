@@ -10,4 +10,3 @@ end
 target 'CC-CEDICT-downloaderTests' do
 
 end
-

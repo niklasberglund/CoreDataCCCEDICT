@@ -13,6 +13,28 @@
 		85088ED51C4A543A00396A1B /* English_entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088ECD1C4A543A00396A1B /* English_entry.m */; };
 		85088ED61C4A543A00396A1B /* Entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088ECF1C4A543A00396A1B /* Entry+CoreDataProperties.m */; };
 		85088ED71C4A543A00396A1B /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088ED11C4A543A00396A1B /* Entry.m */; };
+		85088F011C4CD52300396A1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088F001C4CD52300396A1B /* AppDelegate.m */; };
+		85088F041C4CD52300396A1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088F031C4CD52300396A1B /* main.m */; };
+		85088F071C4CD52300396A1B /* CDCCEDICT_OS_X.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85088F051C4CD52300396A1B /* CDCCEDICT_OS_X.xcdatamodeld */; };
+		85088F091C4CD52300396A1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85088F081C4CD52300396A1B /* Assets.xcassets */; };
+		85088F0C1C4CD52300396A1B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85088F0A1C4CD52300396A1B /* MainMenu.xib */; };
+		85088F141C4CD5EF00396A1B /* CDCCCEDICT.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088F131C4CD5EF00396A1B /* CDCCCEDICT.m */; };
+		85088F151C4CD5EF00396A1B /* CDCCCEDICT.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088F131C4CD5EF00396A1B /* CDCCCEDICT.m */; };
+		85088F181C4CD62500396A1B /* CDSyncer.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088F171C4CD62500396A1B /* CDSyncer.m */; };
+		85088F191C4CD62500396A1B /* CDSyncer.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088F171C4CD62500396A1B /* CDSyncer.m */; };
+		85088F1A1C4F756700396A1B /* CC-CEDICT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85C8B7B01BC155C9004E5F64 /* CC-CEDICT.xcdatamodeld */; };
+		85088F1B1C4F761600396A1B /* Chinese_entry+CoreDataProperties.h in Sources */ = {isa = PBXBuildFile; fileRef = 85088EC61C4A543A00396A1B /* Chinese_entry+CoreDataProperties.h */; };
+		85088F1C1C4F761600396A1B /* Chinese_entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088EC71C4A543A00396A1B /* Chinese_entry+CoreDataProperties.m */; };
+		85088F1D1C4F761600396A1B /* Chinese_entry.h in Sources */ = {isa = PBXBuildFile; fileRef = 85088EC81C4A543A00396A1B /* Chinese_entry.h */; };
+		85088F1E1C4F761600396A1B /* Chinese_entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088EC91C4A543A00396A1B /* Chinese_entry.m */; };
+		85088F1F1C4F761600396A1B /* English_entry+CoreDataProperties.h in Sources */ = {isa = PBXBuildFile; fileRef = 85088ECA1C4A543A00396A1B /* English_entry+CoreDataProperties.h */; };
+		85088F201C4F761600396A1B /* English_entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088ECB1C4A543A00396A1B /* English_entry+CoreDataProperties.m */; };
+		85088F211C4F761600396A1B /* English_entry.h in Sources */ = {isa = PBXBuildFile; fileRef = 85088ECC1C4A543A00396A1B /* English_entry.h */; };
+		85088F221C4F761600396A1B /* English_entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088ECD1C4A543A00396A1B /* English_entry.m */; };
+		85088F231C4F761600396A1B /* Entry+CoreDataProperties.h in Sources */ = {isa = PBXBuildFile; fileRef = 85088ECE1C4A543A00396A1B /* Entry+CoreDataProperties.h */; };
+		85088F241C4F761600396A1B /* Entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088ECF1C4A543A00396A1B /* Entry+CoreDataProperties.m */; };
+		85088F251C4F761600396A1B /* Entry.h in Sources */ = {isa = PBXBuildFile; fileRef = 85088ED01C4A543A00396A1B /* Entry.h */; };
+		85088F261C4F761600396A1B /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088ED11C4A543A00396A1B /* Entry.m */; };
 		85C8B78D1BC155AA004E5F64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C8B78C1BC155AA004E5F64 /* main.m */; };
 		85C8B7901BC155AA004E5F64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C8B78F1BC155AA004E5F64 /* AppDelegate.m */; };
 		85C8B7931BC155AA004E5F64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C8B7921BC155AA004E5F64 /* ViewController.m */; };
@@ -48,6 +70,18 @@
 		85088ECF1C4A543A00396A1B /* Entry+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Entry+CoreDataProperties.m"; sourceTree = "<group>"; };
 		85088ED01C4A543A00396A1B /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
 		85088ED11C4A543A00396A1B /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
+		85088EFD1C4CD52300396A1B /* CDCCEDICT OS X.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CDCCEDICT OS X.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85088EFF1C4CD52300396A1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		85088F001C4CD52300396A1B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		85088F031C4CD52300396A1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85088F061C4CD52300396A1B /* CDCCEDICT_OS_X.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CDCCEDICT_OS_X.xcdatamodel; sourceTree = "<group>"; };
+		85088F081C4CD52300396A1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85088F0B1C4CD52300396A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		85088F0D1C4CD52300396A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85088F121C4CD5EF00396A1B /* CDCCCEDICT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDCCCEDICT.h; sourceTree = "<group>"; };
+		85088F131C4CD5EF00396A1B /* CDCCCEDICT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDCCCEDICT.m; sourceTree = "<group>"; };
+		85088F161C4CD62500396A1B /* CDSyncer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDSyncer.h; sourceTree = "<group>"; };
+		85088F171C4CD62500396A1B /* CDSyncer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSyncer.m; sourceTree = "<group>"; };
 		85C8B7881BC155AA004E5F64 /* CC-CEDICT-downloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CC-CEDICT-downloader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C8B78C1BC155AA004E5F64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		85C8B78E1BC155AA004E5F64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +101,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		85088EFA1C4CD52300396A1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		85C8B7851BC155AA004E5F64 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,7 +126,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		85088EC51C4A542700396A1B /* Core data */ = {
+		85088EC51C4A542700396A1B /* Core data subclasses */ = {
 			isa = PBXGroup;
 			children = (
 				85088EC61C4A543A00396A1B /* Chinese_entry+CoreDataProperties.h */,
@@ -101,14 +142,60 @@
 				85088ED01C4A543A00396A1B /* Entry.h */,
 				85088ED11C4A543A00396A1B /* Entry.m */,
 			);
-			name = "Core data";
+			name = "Core data subclasses";
+			path = "CC-CEDICT-downloader";
+			sourceTree = "<group>";
+		};
+		85088EFE1C4CD52300396A1B /* CDCCEDICT OS X */ = {
+			isa = PBXGroup;
+			children = (
+				85088EFF1C4CD52300396A1B /* AppDelegate.h */,
+				85088F001C4CD52300396A1B /* AppDelegate.m */,
+				85088F081C4CD52300396A1B /* Assets.xcassets */,
+				85088F0A1C4CD52300396A1B /* MainMenu.xib */,
+				85088F0D1C4CD52300396A1B /* Info.plist */,
+				85088F051C4CD52300396A1B /* CDCCEDICT_OS_X.xcdatamodeld */,
+				85088F021C4CD52300396A1B /* Supporting Files */,
+			);
+			path = "CDCCEDICT OS X";
+			sourceTree = "<group>";
+		};
+		85088F021C4CD52300396A1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85088F031C4CD52300396A1B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85088F111C4CD53300396A1B /* CoreDataCCCEDICT */ = {
+			isa = PBXGroup;
+			children = (
+				85088EC51C4A542700396A1B /* Core data subclasses */,
+				85088F121C4CD5EF00396A1B /* CDCCCEDICT.h */,
+				85088F131C4CD5EF00396A1B /* CDCCCEDICT.m */,
+				85088F161C4CD62500396A1B /* CDSyncer.h */,
+				85088F171C4CD62500396A1B /* CDSyncer.m */,
+				85C8B7B01BC155C9004E5F64 /* CC-CEDICT.xcdatamodeld */,
+			);
+			name = CoreDataCCCEDICT;
+			sourceTree = "<group>";
+		};
+		85088F271C4F7A6300396A1B /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				85088EFE1C4CD52300396A1B /* CDCCEDICT OS X */,
+				85C8B78A1BC155AA004E5F64 /* CDCCEDICT iOS */,
+				85C8B7A41BC155AA004E5F64 /* CDCCEDICT iOS tests */,
+			);
+			name = Targets;
 			sourceTree = "<group>";
 		};
 		85C8B77F1BC155AA004E5F64 = {
 			isa = PBXGroup;
 			children = (
-				85C8B78A1BC155AA004E5F64 /* CC-CEDICT-downloader */,
-				85C8B7A41BC155AA004E5F64 /* CC-CEDICT-downloaderTests */,
+				85088F111C4CD53300396A1B /* CoreDataCCCEDICT */,
+				85088F271C4F7A6300396A1B /* Targets */,
 				85C8B7891BC155AA004E5F64 /* Products */,
 				A6886455715D43FB2D54DDFF /* Pods */,
 				BF63B3AE55D029DB516EE5B3 /* Frameworks */,
@@ -120,14 +207,14 @@
 			children = (
 				85C8B7881BC155AA004E5F64 /* CC-CEDICT-downloader.app */,
 				85C8B7A11BC155AA004E5F64 /* CC-CEDICT-downloaderTests.xctest */,
+				85088EFD1C4CD52300396A1B /* CDCCEDICT OS X.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		85C8B78A1BC155AA004E5F64 /* CC-CEDICT-downloader */ = {
+		85C8B78A1BC155AA004E5F64 /* CDCCEDICT iOS */ = {
 			isa = PBXGroup;
 			children = (
-				85088EC51C4A542700396A1B /* Core data */,
 				85C8B78E1BC155AA004E5F64 /* AppDelegate.h */,
 				85C8B78F1BC155AA004E5F64 /* AppDelegate.m */,
 				85C8B7911BC155AA004E5F64 /* ViewController.h */,
@@ -136,9 +223,9 @@
 				85C8B7971BC155AA004E5F64 /* Assets.xcassets */,
 				85C8B7991BC155AA004E5F64 /* LaunchScreen.storyboard */,
 				85C8B79C1BC155AA004E5F64 /* Info.plist */,
-				85C8B7B01BC155C9004E5F64 /* CC-CEDICT.xcdatamodeld */,
 				85C8B78B1BC155AA004E5F64 /* Supporting Files */,
 			);
+			name = "CDCCEDICT iOS";
 			path = "CC-CEDICT-downloader";
 			sourceTree = "<group>";
 		};
@@ -150,12 +237,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		85C8B7A41BC155AA004E5F64 /* CC-CEDICT-downloaderTests */ = {
+		85C8B7A41BC155AA004E5F64 /* CDCCEDICT iOS tests */ = {
 			isa = PBXGroup;
 			children = (
 				85C8B7A51BC155AA004E5F64 /* CC_CEDICT_downloaderTests.m */,
 				85C8B7A71BC155AA004E5F64 /* Info.plist */,
 			);
+			name = "CDCCEDICT iOS tests";
 			path = "CC-CEDICT-downloaderTests";
 			sourceTree = "<group>";
 		};
@@ -179,6 +267,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		85088EFC1C4CD52300396A1B /* CDCCEDICT OS X */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85088F101C4CD52300396A1B /* Build configuration list for PBXNativeTarget "CDCCEDICT OS X" */;
+			buildPhases = (
+				85088EF91C4CD52300396A1B /* Sources */,
+				85088EFA1C4CD52300396A1B /* Frameworks */,
+				85088EFB1C4CD52300396A1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CDCCEDICT OS X";
+			productName = "CDCCEDICT OS X";
+			productReference = 85088EFD1C4CD52300396A1B /* CDCCEDICT OS X.app */;
+			productType = "com.apple.product-type.application";
+		};
 		85C8B7871BC155AA004E5F64 /* CC-CEDICT-downloader */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85C8B7AA1BC155AA004E5F64 /* Build configuration list for PBXNativeTarget "CC-CEDICT-downloader" */;
@@ -225,6 +330,9 @@
 			attributes = {
 				LastUpgradeCheck = 0700;
 				TargetAttributes = {
+					85088EFC1C4CD52300396A1B = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					85C8B7871BC155AA004E5F64 = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -249,11 +357,21 @@
 			targets = (
 				85C8B7871BC155AA004E5F64 /* CC-CEDICT-downloader */,
 				85C8B7A01BC155AA004E5F64 /* CC-CEDICT-downloaderTests */,
+				85088EFC1C4CD52300396A1B /* CDCCEDICT OS X */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		85088EFB1C4CD52300396A1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85088F091C4CD52300396A1B /* Assets.xcassets in Resources */,
+				85088F0C1C4CD52300396A1B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		85C8B7861BC155AA004E5F64 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,13 +440,40 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		85088EF91C4CD52300396A1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85088F1B1C4F761600396A1B /* Chinese_entry+CoreDataProperties.h in Sources */,
+				85088F1C1C4F761600396A1B /* Chinese_entry+CoreDataProperties.m in Sources */,
+				85088F1D1C4F761600396A1B /* Chinese_entry.h in Sources */,
+				85088F1E1C4F761600396A1B /* Chinese_entry.m in Sources */,
+				85088F1F1C4F761600396A1B /* English_entry+CoreDataProperties.h in Sources */,
+				85088F201C4F761600396A1B /* English_entry+CoreDataProperties.m in Sources */,
+				85088F211C4F761600396A1B /* English_entry.h in Sources */,
+				85088F221C4F761600396A1B /* English_entry.m in Sources */,
+				85088F231C4F761600396A1B /* Entry+CoreDataProperties.h in Sources */,
+				85088F241C4F761600396A1B /* Entry+CoreDataProperties.m in Sources */,
+				85088F251C4F761600396A1B /* Entry.h in Sources */,
+				85088F261C4F761600396A1B /* Entry.m in Sources */,
+				85088F1A1C4F756700396A1B /* CC-CEDICT.xcdatamodeld in Sources */,
+				85088F151C4CD5EF00396A1B /* CDCCCEDICT.m in Sources */,
+				85088F041C4CD52300396A1B /* main.m in Sources */,
+				85088F071C4CD52300396A1B /* CDCCEDICT_OS_X.xcdatamodeld in Sources */,
+				85088F191C4CD62500396A1B /* CDSyncer.m in Sources */,
+				85088F011C4CD52300396A1B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		85C8B7841BC155AA004E5F64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				85C8B7931BC155AA004E5F64 /* ViewController.m in Sources */,
+				85088F141C4CD5EF00396A1B /* CDCCCEDICT.m in Sources */,
 				85C8B7B21BC155C9004E5F64 /* CC-CEDICT.xcdatamodeld in Sources */,
 				85C8B7901BC155AA004E5F64 /* AppDelegate.m in Sources */,
+				85088F181C4CD62500396A1B /* CDSyncer.m in Sources */,
 				85088ED41C4A543A00396A1B /* English_entry+CoreDataProperties.m in Sources */,
 				85C8B78D1BC155AA004E5F64 /* main.m in Sources */,
 				85088ED61C4A543A00396A1B /* Entry+CoreDataProperties.m in Sources */,
@@ -358,6 +503,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		85088F0A1C4CD52300396A1B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85088F0B1C4CD52300396A1B /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 		85C8B7941BC155AA004E5F64 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -377,6 +530,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		85088F0E1C4CD52300396A1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "CDCCEDICT OS X/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.klurig.CDCCEDICT-OS-X";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		85088F0F1C4CD52300396A1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "CDCCEDICT OS X/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.klurig.CDCCEDICT-OS-X";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		85C8B7A81BC155AA004E5F64 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -508,6 +691,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		85088F101C4CD52300396A1B /* Build configuration list for PBXNativeTarget "CDCCEDICT OS X" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85088F0E1C4CD52300396A1B /* Debug */,
+				85088F0F1C4CD52300396A1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		85C8B7831BC155AA004E5F64 /* Build configuration list for PBXProject "CC-CEDICT-downloader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -538,13 +729,24 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		85088F051C4CD52300396A1B /* CDCCEDICT_OS_X.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				85088F061C4CD52300396A1B /* CDCCEDICT_OS_X.xcdatamodel */,
+			);
+			currentVersion = 85088F061C4CD52300396A1B /* CDCCEDICT_OS_X.xcdatamodel */;
+			path = CDCCEDICT_OS_X.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		85C8B7B01BC155C9004E5F64 /* CC-CEDICT.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				85C8B7B11BC155C9004E5F64 /* CC-CEDICT.xcdatamodel */,
 			);
 			currentVersion = 85C8B7B11BC155C9004E5F64 /* CC-CEDICT.xcdatamodel */;
-			path = "CC-CEDICT.xcdatamodeld";
+			name = "CC-CEDICT.xcdatamodeld";
+			path = "CC-CEDICT-downloader/CC-CEDICT.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
