@@ -12,5 +12,6 @@
 @interface CDSyncer : NSObject
 
 - (void)testStore;
+- (void)getLatestDatabaseInfoOnCompletion:(void (^)(NSDictionary *databaseInfo, NSError *error))completionBlock;
 
 @end
