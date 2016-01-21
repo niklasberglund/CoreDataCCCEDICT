@@ -20,7 +20,19 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     CDSyncer *syncer = [[CDSyncer alloc] init];
-    [syncer testStore];
+    //[syncer testStore];
+    [syncer getLatestDataInfoOnCompletion:^(NSDictionary *databaseInfo, NSError *error) {
+        NSLog(@"%@", databaseInfo);
+        NSLog(@"%@", databaseInfo[@"gzipArchiveURL"]);
+        NSLog(@"%@", error);
+        
+        //NSURL *gzipArchiveURL = databaseInfo[@"zipArchiveURL"];
+        NSURL *zipArchiveURL = [NSURL URLWithString:@"file:///Users/niklas/htdocs/CC-CEDICT/cedict_1_0_ts_utf-8_mdbg.zip"];
+        
+        [syncer getDataFileFromURL:zipArchiveURL OnCompletion:^(NSData *data, NSError *error) {
+            
+        }];
+    }];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
