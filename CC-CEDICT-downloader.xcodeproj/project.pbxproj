@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C78DEE9E4274B917367A17C /* libPods-CDCCCEDICT OS X.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63815CEFBFA73EDDCB57051F /* libPods-CDCCCEDICT OS X.a */; };
+		222E8AA4751F545C05BD3B91 /* libPods-CDCCCEDICT OS X.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63815CEFBFA73EDDCB57051F /* libPods-CDCCCEDICT OS X.a */; };
+		5C1F293280BAF4FBA7696483 /* libPods-CC-CEDICT-downloader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A912F4C344E677A89D704762 /* libPods-CC-CEDICT-downloader.a */; };
 		85088ED21C4A543A00396A1B /* Chinese_entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088EC71C4A543A00396A1B /* Chinese_entry+CoreDataProperties.m */; };
 		85088ED31C4A543A00396A1B /* Chinese_entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088EC91C4A543A00396A1B /* Chinese_entry.m */; };
 		85088ED41C4A543A00396A1B /* English_entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088ECB1C4A543A00396A1B /* English_entry+CoreDataProperties.m */; };
@@ -44,8 +45,6 @@
 		85C8B79B1BC155AA004E5F64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C8B7991BC155AA004E5F64 /* LaunchScreen.storyboard */; };
 		85C8B7A61BC155AA004E5F64 /* CC_CEDICT_downloaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C8B7A51BC155AA004E5F64 /* CC_CEDICT_downloaderTests.m */; };
 		85C8B7B21BC155C9004E5F64 /* CC-CEDICT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85C8B7B01BC155C9004E5F64 /* CC-CEDICT.xcdatamodeld */; };
-		B266611C451BB23C580D3D96 /* libPods-CC-CEDICT-downloader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A912F4C344E677A89D704762 /* libPods-CC-CEDICT-downloader.a */; };
-		C01D390FC910C1FD15AE8D92 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86648C17A58FCAF73342CB7F /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,9 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B828A2DF47B1AEF1A9A18C8 /* Pods-CDCCCEDICT OS X.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDCCCEDICT OS X.release.xcconfig"; path = "Pods/Target Support Files/Pods-CDCCCEDICT OS X/Pods-CDCCCEDICT OS X.release.xcconfig"; sourceTree = "<group>"; };
-		1FB212029E72AAC6AD2A0B61 /* Pods-CC-CEDICT-downloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CC-CEDICT-downloader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CC-CEDICT-downloader/Pods-CC-CEDICT-downloader.debug.xcconfig"; sourceTree = "<group>"; };
-		44036D46D064FFD37C11C012 /* Pods-CDCCCEDICT OS X.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDCCCEDICT OS X.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CDCCCEDICT OS X/Pods-CDCCCEDICT OS X.debug.xcconfig"; sourceTree = "<group>"; };
+		045357DA6115D64E4045D0F6 /* Pods-CDCCCEDICT OS X.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDCCCEDICT OS X.release.xcconfig"; path = "Pods/Target Support Files/Pods-CDCCCEDICT OS X/Pods-CDCCCEDICT OS X.release.xcconfig"; sourceTree = "<group>"; };
 		63815CEFBFA73EDDCB57051F /* libPods-CDCCCEDICT OS X.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CDCCCEDICT OS X.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85088EC61C4A543A00396A1B /* Chinese_entry+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Chinese_entry+CoreDataProperties.h"; sourceTree = "<group>"; };
 		85088EC71C4A543A00396A1B /* Chinese_entry+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Chinese_entry+CoreDataProperties.m"; sourceTree = "<group>"; };
@@ -87,6 +84,7 @@
 		85088F131C4CD5EF00396A1B /* CDCCCEDICT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDCCCEDICT.m; sourceTree = "<group>"; };
 		85088F161C4CD62500396A1B /* CDSyncer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDSyncer.h; sourceTree = "<group>"; };
 		85088F171C4CD62500396A1B /* CDSyncer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSyncer.m; sourceTree = "<group>"; };
+		859CBC331C4FD67C00D9F088 /* libGZIP.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGZIP.a; path = "Pods/../build/Debug-iphoneos/libGZIP.a"; sourceTree = "<group>"; };
 		85C8B7881BC155AA004E5F64 /* CC-CEDICT-downloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CC-CEDICT-downloader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C8B78C1BC155AA004E5F64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		85C8B78E1BC155AA004E5F64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,7 +101,9 @@
 		85C8B7B11BC155C9004E5F64 /* CC-CEDICT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CC-CEDICT.xcdatamodel"; sourceTree = "<group>"; };
 		86648C17A58FCAF73342CB7F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A912F4C344E677A89D704762 /* libPods-CC-CEDICT-downloader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CC-CEDICT-downloader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B26D03E840BF3A2B3EEA7B9A /* Pods-CC-CEDICT-downloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CC-CEDICT-downloader.release.xcconfig"; path = "Pods/Target Support Files/Pods-CC-CEDICT-downloader/Pods-CC-CEDICT-downloader.release.xcconfig"; sourceTree = "<group>"; };
+		CC23E36D81B41F8B97E7155A /* Pods-CC-CEDICT-downloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CC-CEDICT-downloader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CC-CEDICT-downloader/Pods-CC-CEDICT-downloader.debug.xcconfig"; sourceTree = "<group>"; };
+		D93D0D87C9CB7C51767659F0 /* Pods-CC-CEDICT-downloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CC-CEDICT-downloader.release.xcconfig"; path = "Pods/Target Support Files/Pods-CC-CEDICT-downloader/Pods-CC-CEDICT-downloader.release.xcconfig"; sourceTree = "<group>"; };
+		F672B88524392E7CFB9FA0DE /* Pods-CDCCCEDICT OS X.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDCCCEDICT OS X.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CDCCCEDICT OS X/Pods-CDCCCEDICT OS X.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C78DEE9E4274B917367A17C /* libPods-CDCCCEDICT OS X.a in Frameworks */,
+				222E8AA4751F545C05BD3B91 /* libPods-CDCCCEDICT OS X.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,8 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B266611C451BB23C580D3D96 /* libPods-CC-CEDICT-downloader.a in Frameworks */,
-				C01D390FC910C1FD15AE8D92 /* libPods.a in Frameworks */,
+				5C1F293280BAF4FBA7696483 /* libPods-CC-CEDICT-downloader.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,11 +198,19 @@
 			name = Targets;
 			sourceTree = "<group>";
 		};
+		859CBC351C4FFF7100D9F088 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
 		85C8B77F1BC155AA004E5F64 = {
 			isa = PBXGroup;
 			children = (
 				85088F111C4CD53300396A1B /* CoreDataCCCEDICT */,
 				85088F271C4F7A6300396A1B /* Targets */,
+				859CBC351C4FFF7100D9F088 /* Libs */,
 				85C8B7891BC155AA004E5F64 /* Products */,
 				A6886455715D43FB2D54DDFF /* Pods */,
 				BF63B3AE55D029DB516EE5B3 /* Frameworks */,
@@ -258,10 +265,10 @@
 		A6886455715D43FB2D54DDFF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1FB212029E72AAC6AD2A0B61 /* Pods-CC-CEDICT-downloader.debug.xcconfig */,
-				B26D03E840BF3A2B3EEA7B9A /* Pods-CC-CEDICT-downloader.release.xcconfig */,
-				44036D46D064FFD37C11C012 /* Pods-CDCCCEDICT OS X.debug.xcconfig */,
-				0B828A2DF47B1AEF1A9A18C8 /* Pods-CDCCCEDICT OS X.release.xcconfig */,
+				CC23E36D81B41F8B97E7155A /* Pods-CC-CEDICT-downloader.debug.xcconfig */,
+				D93D0D87C9CB7C51767659F0 /* Pods-CC-CEDICT-downloader.release.xcconfig */,
+				F672B88524392E7CFB9FA0DE /* Pods-CDCCCEDICT OS X.debug.xcconfig */,
+				045357DA6115D64E4045D0F6 /* Pods-CDCCCEDICT OS X.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -269,6 +276,7 @@
 		BF63B3AE55D029DB516EE5B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				859CBC331C4FD67C00D9F088 /* libGZIP.a */,
 				A912F4C344E677A89D704762 /* libPods-CC-CEDICT-downloader.a */,
 				86648C17A58FCAF73342CB7F /* libPods.a */,
 				63815CEFBFA73EDDCB57051F /* libPods-CDCCCEDICT OS X.a */,
@@ -283,12 +291,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85088F101C4CD52300396A1B /* Build configuration list for PBXNativeTarget "CDCCCEDICT OS X" */;
 			buildPhases = (
-				9CAC130A1502400F9A1CB469 /* Check Pods Manifest.lock */,
+				8EA00643E6890A92BE1D49C4 /* Check Pods Manifest.lock */,
 				85088EF91C4CD52300396A1B /* Sources */,
 				85088EFA1C4CD52300396A1B /* Frameworks */,
 				85088EFB1C4CD52300396A1B /* Resources */,
-				86787289B076495DDC14E685 /* Embed Pods Frameworks */,
-				7AC3FF721013EF87497CC0CE /* Copy Pods Resources */,
+				DA8E421ABBF6D2252FE430A2 /* Embed Pods Frameworks */,
+				08714D613AC26DA94CE57D95 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,12 +311,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85C8B7AA1BC155AA004E5F64 /* Build configuration list for PBXNativeTarget "CC-CEDICT-downloader" */;
 			buildPhases = (
-				06C75C00428263037FAE2B80 /* Check Pods Manifest.lock */,
+				D6F8F0161B1D81B29169577F /* Check Pods Manifest.lock */,
 				85C8B7841BC155AA004E5F64 /* Sources */,
 				85C8B7851BC155AA004E5F64 /* Frameworks */,
 				85C8B7861BC155AA004E5F64 /* Resources */,
-				C648A29998949E5D749E07E6 /* Embed Pods Frameworks */,
-				C5CDB0EC8909C059CDFBBCA8 /* Copy Pods Resources */,
+				3F821D7F37BC85688E7B8EEE /* Embed Pods Frameworks */,
+				6368734D59237D943A5F0D13 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -407,22 +415,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		06C75C00428263037FAE2B80 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		7AC3FF721013EF87497CC0CE /* Copy Pods Resources */ = {
+		08714D613AC26DA94CE57D95 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -437,7 +430,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CDCCCEDICT OS X/Pods-CDCCCEDICT OS X-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		86787289B076495DDC14E685 /* Embed Pods Frameworks */ = {
+		3F821D7F37BC85688E7B8EEE /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -449,25 +442,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CDCCCEDICT OS X/Pods-CDCCCEDICT OS X-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CC-CEDICT-downloader/Pods-CC-CEDICT-downloader-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9CAC130A1502400F9A1CB469 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		C5CDB0EC8909C059CDFBBCA8 /* Copy Pods Resources */ = {
+		6368734D59237D943A5F0D13 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -482,7 +460,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CC-CEDICT-downloader/Pods-CC-CEDICT-downloader-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C648A29998949E5D749E07E6 /* Embed Pods Frameworks */ = {
+		8EA00643E6890A92BE1D49C4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D6F8F0161B1D81B29169577F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DA8E421ABBF6D2252FE430A2 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -494,7 +502,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CDCCCEDICT OS X/Pods-CDCCCEDICT OS X-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -592,14 +600,23 @@
 /* Begin XCBuildConfiguration section */
 		85088F0E1C4CD52300396A1B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44036D46D064FFD37C11C012 /* Pods-CDCCCEDICT OS X.debug.xcconfig */;
+			baseConfigurationReference = F672B88524392E7CFB9FA0DE /* Pods-CDCCCEDICT OS X.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "CDCCEDICT OS X/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.klurig.CDCCEDICT-OS-X";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -608,14 +625,23 @@
 		};
 		85088F0F1C4CD52300396A1B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B828A2DF47B1AEF1A9A18C8 /* Pods-CDCCCEDICT OS X.release.xcconfig */;
+			baseConfigurationReference = 045357DA6115D64E4045D0F6 /* Pods-CDCCCEDICT OS X.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "CDCCEDICT OS X/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.klurig.CDCCEDICT-OS-X";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -642,6 +668,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -685,6 +712,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -704,11 +732,16 @@
 		};
 		85C8B7AB1BC155AA004E5F64 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FB212029E72AAC6AD2A0B61 /* Pods-CC-CEDICT-downloader.debug.xcconfig */;
+			baseConfigurationReference = CC23E36D81B41F8B97E7155A /* Pods-CC-CEDICT-downloader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "CC-CEDICT-downloader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.klurig.CC-CEDICT-downloader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -716,11 +749,16 @@
 		};
 		85C8B7AC1BC155AA004E5F64 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B26D03E840BF3A2B3EEA7B9A /* Pods-CC-CEDICT-downloader.release.xcconfig */;
+			baseConfigurationReference = D93D0D87C9CB7C51767659F0 /* Pods-CC-CEDICT-downloader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "CC-CEDICT-downloader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.klurig.CC-CEDICT-downloader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
