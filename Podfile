@@ -10,3 +10,8 @@ end
 target 'CC-CEDICT-downloaderTests' do
 
 end
+
+target 'CDCCCEDICT OS X' do
+    pod 'UnzipKit'
+end
+
