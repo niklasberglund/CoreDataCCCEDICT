@@ -3,6 +3,8 @@
 # Uncomment this line if you're using Swift
 # use_frameworks!
 
+platforms = { :ios => "8.0", :osx => "10.9" }
+
 target 'CC-CEDICT-downloader' do
     pod 'UnzipKit'
 end

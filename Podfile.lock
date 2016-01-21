@@ -1,10 +1,10 @@
 PODS:
-  - GZIP (1.1.1)
+  - UnzipKit (1.6.1)
 
 DEPENDENCIES:
-  - GZIP
+  - UnzipKit
 
 SPEC CHECKSUMS:
-  GZIP: f8beb59597f651e6970a45b816508a9c6d700b77
+  UnzipKit: b75d1d81570b53fc4aa3415627e32dfce256f0e0
 
 COCOAPODS: 0.39.0
