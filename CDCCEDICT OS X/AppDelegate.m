@@ -21,16 +21,21 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     CDSyncer *syncer = [[CDSyncer alloc] init];
     //[syncer testStore];
+    
     [syncer getLatestDataInfoOnCompletion:^(NSDictionary *databaseInfo, NSError *error) {
         NSLog(@"%@", databaseInfo);
         NSLog(@"%@", databaseInfo[@"gzipArchiveURL"]);
         NSLog(@"%@", error);
         
-        //NSURL *gzipArchiveURL = databaseInfo[@"zipArchiveURL"];
-        NSURL *zipArchiveURL = [NSURL URLWithString:@"file:///Users/niklas/htdocs/CC-CEDICT/cedict_1_0_ts_utf-8_mdbg.zip"];
+        NSURL *zipArchiveURL = databaseInfo[@"zipArchiveURL"];
+        //NSURL *zipArchiveURL = [NSURL URLWithString:@"file:///Users/niklas/htdocs/CC-CEDICT/cedict_1_0_ts_utf-8_mdbg.zip"];
         
         [syncer getDataFileFromURL:zipArchiveURL OnCompletion:^(NSData *data, NSError *error) {
-            
+            NSLog(@"In completion block");
+            NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+        } onProgress:^(NSNumber *progress) {
+            NSLog(@"In progress block");
+            NSLog(@"%@", progress);
         }];
     }];
 }

@@ -198,6 +198,13 @@
 			name = Targets;
 			sourceTree = "<group>";
 		};
+		8517D5501C514CDA009BB883 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		859CBC351C4FFF7100D9F088 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +215,7 @@
 		85C8B77F1BC155AA004E5F64 = {
 			isa = PBXGroup;
 			children = (
+				8517D5501C514CDA009BB883 /* Categories */,
 				85088F111C4CD53300396A1B /* CoreDataCCCEDICT */,
 				85088F271C4F7A6300396A1B /* Targets */,
 				859CBC351C4FFF7100D9F088 /* Libs */,

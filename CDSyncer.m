@@ -62,7 +62,6 @@
 {
     NSError *error;
     NSString *result = [NSString stringWithContentsOfURL:[NSURL URLWithString:@"https://www.mdbg.net/chindict/chindict.php?page=cc-cedict"] encoding:NSUTF8StringEncoding error:&error];
-    NSLog(@"%@", result);
     
     if (error) {
         completionBlock(nil, error);
@@ -129,16 +128,21 @@
 
 - (void)getDataFileFromURL:(NSURL *)url OnCompletion:(void (^)(NSData *data, NSError *error))completionBlock
 {
-    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:nil];
+    self.completionBlock = completionBlock;
     
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:nil];
     NSURLSessionDataTask *dataTask = [session dataTaskWithURL:url];
     [dataTask resume];
+}
+
+- (void)getDataFileFromURL:(NSURL *)url OnCompletion:(void (^)(NSData *, NSError *))completionBlock onProgress:(void (^)(NSNumber *))progressBlock
+{
+    self.completionBlock = completionBlock;
+    self.progressBlock = progressBlock;
     
-    /*[session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        NSLog(@"%@", data);
-        NSLog(@"%@", response);
-        NSLog(@"%@", error);
-    }];*/
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:nil];
+    NSURLSessionDataTask *dataTask = [session dataTaskWithURL:url];
+    [dataTask resume];
 }
 
 #pragma mark - NSURLSession delegate methods
@@ -152,38 +156,39 @@
 - (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveData:(NSData *)data {
     [_downloadedData appendData:data];
     
-    NSLog(@"%llu", ((long long)(_downloadedData.length/_dataSize)));
-    NSLog(@"downloaded: %llu total: %llu", _downloadedData.length, _dataSize);
+    // invoke percentageBlock
+    if (self.progressBlock) {
+        NSNumber *progressNumber =[NSNumber numberWithFloat:(float)(_downloadedData.length/(float)_dataSize)];
+        self.progressBlock(progressNumber);
+    }
     
     // download complete?
     if (_downloadedData.length == _dataSize) {
+        // write to temporary location
         NSString *tempArchivePath = [NSString stringWithFormat:@"file://%@CC-CEDICT.txt.zip", NSTemporaryDirectory()];
         NSURL *tempArchiveURL = [NSURL URLWithString:tempArchivePath];
+        BOOL writeSuccess = [_downloadedData writeToURL:tempArchiveURL atomically:YES]; // TODO: check writeSuccess
         
-        //BOOL writeSuccess = [_downloadedData writeToFile:tempArchivePath atomically:YES];
-        BOOL writeSuccess = [_downloadedData writeToURL:tempArchiveURL atomically:YES];
-        
-        NSLog(@"%@", writeSuccess ? @"YES" : @"NO");
+        // extract zip file
         NSError *archiveError;
         UZKArchive *archive = [[UZKArchive alloc] initWithURL:tempArchiveURL error:&archiveError];
         NSError *listError;
         NSArray *fileNames = [archive listFilenames:&listError];
-        NSLog(@"filenames: %@", fileNames);
-        NSLog(@"%@", NSTemporaryDirectory());
         
         NSError *extractError = nil;
         [archive extractFilesTo:NSTemporaryDirectory() overwrite:YES progress:^(UZKFileInfo * _Nonnull currentFile, CGFloat percentArchiveDecompressed) {
-            NSLog(@"%@", currentFile.filename);
-            NSLog(@"extracted: %f percent", percentArchiveDecompressed);
-            NSLog(@"%@", extractError);
-            
             NSURL *tempDirURL = [NSURL URLWithString:[NSString stringWithFormat:@"file://%@", NSTemporaryDirectory()]];
             NSURL *extractedFileURL = [tempDirURL URLByAppendingPathComponent:currentFile.filename];
-            NSLog(@"%@", tempDirURL);
-            NSLog(@"%@", extractedFileURL);
+            
             NSError *readFileError = nil;
-            NSLog(@"%@", [NSString stringWithContentsOfURL:extractedFileURL encoding:NSUTF8StringEncoding error:&readFileError]);
-            NSLog(@"%@", readFileError);
+            
+            // invoke completionBlock
+            if (self.completionBlock) {
+                self.completionBlock([NSData dataWithContentsOfURL:extractedFileURL], readFileError);
+            }
+            else { // this should not be possible
+                NSLog(@"No completionBlock.......");
+            }
         } error:&extractError];
     }
 }
