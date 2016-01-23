@@ -133,7 +133,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		85088EC51C4A542700396A1B /* Core data subclasses */ = {
+		85088EC51C4A542700396A1B /* internal Core Data subclasses */ = {
 			isa = PBXGroup;
 			children = (
 				85088EC61C4A543A00396A1B /* Chinese_entry+CoreDataProperties.h */,
@@ -149,7 +149,7 @@
 				85088ED01C4A543A00396A1B /* Entry.h */,
 				85088ED11C4A543A00396A1B /* Entry.m */,
 			);
-			name = "Core data subclasses";
+			name = "internal Core Data subclasses";
 			path = "CC-CEDICT-downloader";
 			sourceTree = "<group>";
 		};
@@ -178,7 +178,7 @@
 		85088F111C4CD53300396A1B /* CoreDataCCCEDICT */ = {
 			isa = PBXGroup;
 			children = (
-				85088EC51C4A542700396A1B /* Core data subclasses */,
+				85088EC51C4A542700396A1B /* internal Core Data subclasses */,
 				85088F121C4CD5EF00396A1B /* CDCCCEDICT.h */,
 				85088F131C4CD5EF00396A1B /* CDCCCEDICT.m */,
 				85088F161C4CD62500396A1B /* CDSyncer.h */,
