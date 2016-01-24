@@ -126,7 +126,7 @@
     completionBlock(resultDict, error);
 }
 
-- (void)getDataFileFromURL:(NSURL *)url OnCompletion:(void (^)(NSData *data, NSError *error))completionBlock
+- (void)getDataFileFromURL:(NSURL *)url onCompletion:(void (^)(NSData *data, NSError *error))completionBlock
 {
     self.completionBlock = completionBlock;
     
@@ -135,7 +135,7 @@
     [dataTask resume];
 }
 
-- (void)getDataFileFromURL:(NSURL *)url OnCompletion:(void (^)(NSData *, NSError *))completionBlock onProgress:(void (^)(NSNumber *))progressBlock
+- (void)getDataFileFromURL:(NSURL *)url onCompletion:(void (^)(NSData *, NSError *))completionBlock onProgress:(void (^)(NSNumber *))progressBlock
 {
     self.completionBlock = completionBlock;
     self.progressBlock = progressBlock;
