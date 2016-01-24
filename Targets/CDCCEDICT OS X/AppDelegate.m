@@ -30,7 +30,7 @@
         NSURL *zipArchiveURL = databaseInfo[@"zipArchiveURL"];
         //NSURL *zipArchiveURL = [NSURL URLWithString:@"file:///Users/niklas/htdocs/CC-CEDICT/cedict_1_0_ts_utf-8_mdbg.zip"];
         
-        [syncer getDataFileFromURL:zipArchiveURL OnCompletion:^(NSData *data, NSError *error) {
+        [syncer getDataFileFromURL:zipArchiveURL onCompletion:^(NSData *data, NSError *error) {
             NSLog(@"In completion block");
             NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
         } onProgress:^(NSNumber *progress) {
