@@ -9,12 +9,6 @@
 /* Begin PBXBuildFile section */
 		222E8AA4751F545C05BD3B91 /* libPods-CDCCCEDICT OS X.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63815CEFBFA73EDDCB57051F /* libPods-CDCCCEDICT OS X.a */; };
 		5C1F293280BAF4FBA7696483 /* libPods-CC-CEDICT-downloader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A912F4C344E677A89D704762 /* libPods-CC-CEDICT-downloader.a */; };
-		85088ED21C4A543A00396A1B /* Chinese_entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088EC71C4A543A00396A1B /* Chinese_entry+CoreDataProperties.m */; };
-		85088ED31C4A543A00396A1B /* Chinese_entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088EC91C4A543A00396A1B /* Chinese_entry.m */; };
-		85088ED41C4A543A00396A1B /* English_entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088ECB1C4A543A00396A1B /* English_entry+CoreDataProperties.m */; };
-		85088ED51C4A543A00396A1B /* English_entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088ECD1C4A543A00396A1B /* English_entry.m */; };
-		85088ED61C4A543A00396A1B /* Entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088ECF1C4A543A00396A1B /* Entry+CoreDataProperties.m */; };
-		85088ED71C4A543A00396A1B /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088ED11C4A543A00396A1B /* Entry.m */; };
 		85088F011C4CD52300396A1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088F001C4CD52300396A1B /* AppDelegate.m */; };
 		85088F041C4CD52300396A1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088F031C4CD52300396A1B /* main.m */; };
 		85088F071C4CD52300396A1B /* CDCCEDICT_OS_X.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85088F051C4CD52300396A1B /* CDCCEDICT_OS_X.xcdatamodeld */; };
@@ -25,18 +19,18 @@
 		85088F181C4CD62500396A1B /* CDSyncer.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088F171C4CD62500396A1B /* CDSyncer.m */; };
 		85088F191C4CD62500396A1B /* CDSyncer.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088F171C4CD62500396A1B /* CDSyncer.m */; };
 		85088F1A1C4F756700396A1B /* CC-CEDICT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85C8B7B01BC155C9004E5F64 /* CC-CEDICT.xcdatamodeld */; };
-		85088F1B1C4F761600396A1B /* Chinese_entry+CoreDataProperties.h in Sources */ = {isa = PBXBuildFile; fileRef = 85088EC61C4A543A00396A1B /* Chinese_entry+CoreDataProperties.h */; };
-		85088F1C1C4F761600396A1B /* Chinese_entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088EC71C4A543A00396A1B /* Chinese_entry+CoreDataProperties.m */; };
-		85088F1D1C4F761600396A1B /* Chinese_entry.h in Sources */ = {isa = PBXBuildFile; fileRef = 85088EC81C4A543A00396A1B /* Chinese_entry.h */; };
-		85088F1E1C4F761600396A1B /* Chinese_entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088EC91C4A543A00396A1B /* Chinese_entry.m */; };
-		85088F1F1C4F761600396A1B /* English_entry+CoreDataProperties.h in Sources */ = {isa = PBXBuildFile; fileRef = 85088ECA1C4A543A00396A1B /* English_entry+CoreDataProperties.h */; };
-		85088F201C4F761600396A1B /* English_entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088ECB1C4A543A00396A1B /* English_entry+CoreDataProperties.m */; };
-		85088F211C4F761600396A1B /* English_entry.h in Sources */ = {isa = PBXBuildFile; fileRef = 85088ECC1C4A543A00396A1B /* English_entry.h */; };
-		85088F221C4F761600396A1B /* English_entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088ECD1C4A543A00396A1B /* English_entry.m */; };
-		85088F231C4F761600396A1B /* Entry+CoreDataProperties.h in Sources */ = {isa = PBXBuildFile; fileRef = 85088ECE1C4A543A00396A1B /* Entry+CoreDataProperties.h */; };
-		85088F241C4F761600396A1B /* Entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088ECF1C4A543A00396A1B /* Entry+CoreDataProperties.m */; };
-		85088F251C4F761600396A1B /* Entry.h in Sources */ = {isa = PBXBuildFile; fileRef = 85088ED01C4A543A00396A1B /* Entry.h */; };
-		85088F261C4F761600396A1B /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088ED11C4A543A00396A1B /* Entry.m */; };
+		8517D5651C54D091009BB883 /* Entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8517D55A1C54D091009BB883 /* Entry+CoreDataProperties.m */; };
+		8517D5661C54D091009BB883 /* Entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8517D55A1C54D091009BB883 /* Entry+CoreDataProperties.m */; };
+		8517D5671C54D091009BB883 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 8517D55C1C54D091009BB883 /* Entry.m */; };
+		8517D5681C54D091009BB883 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 8517D55C1C54D091009BB883 /* Entry.m */; };
+		8517D5691C54D091009BB883 /* Chinese_entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8517D55E1C54D091009BB883 /* Chinese_entry+CoreDataProperties.m */; };
+		8517D56A1C54D091009BB883 /* Chinese_entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8517D55E1C54D091009BB883 /* Chinese_entry+CoreDataProperties.m */; };
+		8517D56B1C54D091009BB883 /* Chinese_entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 8517D5601C54D091009BB883 /* Chinese_entry.m */; };
+		8517D56C1C54D091009BB883 /* Chinese_entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 8517D5601C54D091009BB883 /* Chinese_entry.m */; };
+		8517D56D1C54D091009BB883 /* English_entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8517D5621C54D091009BB883 /* English_entry+CoreDataProperties.m */; };
+		8517D56E1C54D091009BB883 /* English_entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8517D5621C54D091009BB883 /* English_entry+CoreDataProperties.m */; };
+		8517D56F1C54D091009BB883 /* English_entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 8517D5641C54D091009BB883 /* English_entry.m */; };
+		8517D5701C54D091009BB883 /* English_entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 8517D5641C54D091009BB883 /* English_entry.m */; };
 		85C8B78D1BC155AA004E5F64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C8B78C1BC155AA004E5F64 /* main.m */; };
 		85C8B7901BC155AA004E5F64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C8B78F1BC155AA004E5F64 /* AppDelegate.m */; };
 		85C8B7931BC155AA004E5F64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C8B7921BC155AA004E5F64 /* ViewController.m */; };
@@ -60,18 +54,6 @@
 /* Begin PBXFileReference section */
 		045357DA6115D64E4045D0F6 /* Pods-CDCCCEDICT OS X.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDCCCEDICT OS X.release.xcconfig"; path = "Pods/Target Support Files/Pods-CDCCCEDICT OS X/Pods-CDCCCEDICT OS X.release.xcconfig"; sourceTree = "<group>"; };
 		63815CEFBFA73EDDCB57051F /* libPods-CDCCCEDICT OS X.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CDCCCEDICT OS X.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		85088EC61C4A543A00396A1B /* Chinese_entry+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Chinese_entry+CoreDataProperties.h"; sourceTree = "<group>"; };
-		85088EC71C4A543A00396A1B /* Chinese_entry+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Chinese_entry+CoreDataProperties.m"; sourceTree = "<group>"; };
-		85088EC81C4A543A00396A1B /* Chinese_entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chinese_entry.h; sourceTree = "<group>"; };
-		85088EC91C4A543A00396A1B /* Chinese_entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chinese_entry.m; sourceTree = "<group>"; };
-		85088ECA1C4A543A00396A1B /* English_entry+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "English_entry+CoreDataProperties.h"; sourceTree = "<group>"; };
-		85088ECB1C4A543A00396A1B /* English_entry+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "English_entry+CoreDataProperties.m"; sourceTree = "<group>"; };
-		85088ECC1C4A543A00396A1B /* English_entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = English_entry.h; sourceTree = "<group>"; };
-		85088ECD1C4A543A00396A1B /* English_entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = English_entry.m; sourceTree = "<group>"; };
-		85088ECE1C4A543A00396A1B /* Entry+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Entry+CoreDataProperties.h"; sourceTree = "<group>"; };
-		85088ECF1C4A543A00396A1B /* Entry+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Entry+CoreDataProperties.m"; sourceTree = "<group>"; };
-		85088ED01C4A543A00396A1B /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
-		85088ED11C4A543A00396A1B /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
 		85088EFD1C4CD52300396A1B /* CDCCCEDICT OS X.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CDCCCEDICT OS X.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85088EFF1C4CD52300396A1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		85088F001C4CD52300396A1B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -84,6 +66,18 @@
 		85088F131C4CD5EF00396A1B /* CDCCCEDICT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDCCCEDICT.m; sourceTree = "<group>"; };
 		85088F161C4CD62500396A1B /* CDSyncer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDSyncer.h; sourceTree = "<group>"; };
 		85088F171C4CD62500396A1B /* CDSyncer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSyncer.m; sourceTree = "<group>"; };
+		8517D5591C54D091009BB883 /* Entry+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Entry+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8517D55A1C54D091009BB883 /* Entry+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Entry+CoreDataProperties.m"; sourceTree = "<group>"; };
+		8517D55B1C54D091009BB883 /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		8517D55C1C54D091009BB883 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
+		8517D55D1C54D091009BB883 /* Chinese_entry+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Chinese_entry+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8517D55E1C54D091009BB883 /* Chinese_entry+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Chinese_entry+CoreDataProperties.m"; sourceTree = "<group>"; };
+		8517D55F1C54D091009BB883 /* Chinese_entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chinese_entry.h; sourceTree = "<group>"; };
+		8517D5601C54D091009BB883 /* Chinese_entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chinese_entry.m; sourceTree = "<group>"; };
+		8517D5611C54D091009BB883 /* English_entry+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "English_entry+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8517D5621C54D091009BB883 /* English_entry+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "English_entry+CoreDataProperties.m"; sourceTree = "<group>"; };
+		8517D5631C54D091009BB883 /* English_entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = English_entry.h; sourceTree = "<group>"; };
+		8517D5641C54D091009BB883 /* English_entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = English_entry.m; sourceTree = "<group>"; };
 		859CBC331C4FD67C00D9F088 /* libGZIP.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGZIP.a; path = "Pods/../build/Debug-iphoneos/libGZIP.a"; sourceTree = "<group>"; };
 		85C8B7881BC155AA004E5F64 /* CC-CEDICT-downloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CC-CEDICT-downloader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C8B78C1BC155AA004E5F64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -136,18 +130,18 @@
 		85088EC51C4A542700396A1B /* internal Core Data subclasses */ = {
 			isa = PBXGroup;
 			children = (
-				85088EC61C4A543A00396A1B /* Chinese_entry+CoreDataProperties.h */,
-				85088EC71C4A543A00396A1B /* Chinese_entry+CoreDataProperties.m */,
-				85088EC81C4A543A00396A1B /* Chinese_entry.h */,
-				85088EC91C4A543A00396A1B /* Chinese_entry.m */,
-				85088ECA1C4A543A00396A1B /* English_entry+CoreDataProperties.h */,
-				85088ECB1C4A543A00396A1B /* English_entry+CoreDataProperties.m */,
-				85088ECC1C4A543A00396A1B /* English_entry.h */,
-				85088ECD1C4A543A00396A1B /* English_entry.m */,
-				85088ECE1C4A543A00396A1B /* Entry+CoreDataProperties.h */,
-				85088ECF1C4A543A00396A1B /* Entry+CoreDataProperties.m */,
-				85088ED01C4A543A00396A1B /* Entry.h */,
-				85088ED11C4A543A00396A1B /* Entry.m */,
+				8517D5591C54D091009BB883 /* Entry+CoreDataProperties.h */,
+				8517D55A1C54D091009BB883 /* Entry+CoreDataProperties.m */,
+				8517D55B1C54D091009BB883 /* Entry.h */,
+				8517D55C1C54D091009BB883 /* Entry.m */,
+				8517D55D1C54D091009BB883 /* Chinese_entry+CoreDataProperties.h */,
+				8517D55E1C54D091009BB883 /* Chinese_entry+CoreDataProperties.m */,
+				8517D55F1C54D091009BB883 /* Chinese_entry.h */,
+				8517D5601C54D091009BB883 /* Chinese_entry.m */,
+				8517D5611C54D091009BB883 /* English_entry+CoreDataProperties.h */,
+				8517D5621C54D091009BB883 /* English_entry+CoreDataProperties.m */,
+				8517D5631C54D091009BB883 /* English_entry.h */,
+				8517D5641C54D091009BB883 /* English_entry.m */,
 			);
 			name = "internal Core Data subclasses";
 			path = "CC-CEDICT-downloader";
@@ -520,23 +514,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85088F1B1C4F761600396A1B /* Chinese_entry+CoreDataProperties.h in Sources */,
-				85088F1C1C4F761600396A1B /* Chinese_entry+CoreDataProperties.m in Sources */,
-				85088F1D1C4F761600396A1B /* Chinese_entry.h in Sources */,
-				85088F1E1C4F761600396A1B /* Chinese_entry.m in Sources */,
-				85088F1F1C4F761600396A1B /* English_entry+CoreDataProperties.h in Sources */,
-				85088F201C4F761600396A1B /* English_entry+CoreDataProperties.m in Sources */,
-				85088F211C4F761600396A1B /* English_entry.h in Sources */,
-				85088F221C4F761600396A1B /* English_entry.m in Sources */,
-				85088F231C4F761600396A1B /* Entry+CoreDataProperties.h in Sources */,
-				85088F241C4F761600396A1B /* Entry+CoreDataProperties.m in Sources */,
-				85088F251C4F761600396A1B /* Entry.h in Sources */,
-				85088F261C4F761600396A1B /* Entry.m in Sources */,
 				85088F1A1C4F756700396A1B /* CC-CEDICT.xcdatamodeld in Sources */,
+				8517D5661C54D091009BB883 /* Entry+CoreDataProperties.m in Sources */,
 				85088F151C4CD5EF00396A1B /* CDCCCEDICT.m in Sources */,
 				85088F041C4CD52300396A1B /* main.m in Sources */,
+				8517D56A1C54D091009BB883 /* Chinese_entry+CoreDataProperties.m in Sources */,
+				8517D5681C54D091009BB883 /* Entry.m in Sources */,
 				85088F071C4CD52300396A1B /* CDCCEDICT_OS_X.xcdatamodeld in Sources */,
 				85088F191C4CD62500396A1B /* CDSyncer.m in Sources */,
+				8517D56C1C54D091009BB883 /* Chinese_entry.m in Sources */,
+				8517D5701C54D091009BB883 /* English_entry.m in Sources */,
+				8517D56E1C54D091009BB883 /* English_entry+CoreDataProperties.m in Sources */,
 				85088F011C4CD52300396A1B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,17 +534,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				85C8B7931BC155AA004E5F64 /* ViewController.m in Sources */,
+				8517D5651C54D091009BB883 /* Entry+CoreDataProperties.m in Sources */,
 				85088F141C4CD5EF00396A1B /* CDCCCEDICT.m in Sources */,
 				85C8B7B21BC155C9004E5F64 /* CC-CEDICT.xcdatamodeld in Sources */,
+				8517D5691C54D091009BB883 /* Chinese_entry+CoreDataProperties.m in Sources */,
+				8517D5671C54D091009BB883 /* Entry.m in Sources */,
 				85C8B7901BC155AA004E5F64 /* AppDelegate.m in Sources */,
 				85088F181C4CD62500396A1B /* CDSyncer.m in Sources */,
-				85088ED41C4A543A00396A1B /* English_entry+CoreDataProperties.m in Sources */,
+				8517D56B1C54D091009BB883 /* Chinese_entry.m in Sources */,
+				8517D56F1C54D091009BB883 /* English_entry.m in Sources */,
+				8517D56D1C54D091009BB883 /* English_entry+CoreDataProperties.m in Sources */,
 				85C8B78D1BC155AA004E5F64 /* main.m in Sources */,
-				85088ED61C4A543A00396A1B /* Entry+CoreDataProperties.m in Sources */,
-				85088ED71C4A543A00396A1B /* Entry.m in Sources */,
-				85088ED51C4A543A00396A1B /* English_entry.m in Sources */,
-				85088ED31C4A543A00396A1B /* Chinese_entry.m in Sources */,
-				85088ED21C4A543A00396A1B /* Chinese_entry+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
