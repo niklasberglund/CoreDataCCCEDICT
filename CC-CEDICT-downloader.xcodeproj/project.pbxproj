@@ -130,10 +130,6 @@
 		85088EC51C4A542700396A1B /* internal Core Data subclasses */ = {
 			isa = PBXGroup;
 			children = (
-				8517D5591C54D091009BB883 /* Entry+CoreDataProperties.h */,
-				8517D55A1C54D091009BB883 /* Entry+CoreDataProperties.m */,
-				8517D55B1C54D091009BB883 /* Entry.h */,
-				8517D55C1C54D091009BB883 /* Entry.m */,
 				8517D55D1C54D091009BB883 /* Chinese_entry+CoreDataProperties.h */,
 				8517D55E1C54D091009BB883 /* Chinese_entry+CoreDataProperties.m */,
 				8517D55F1C54D091009BB883 /* Chinese_entry.h */,
@@ -142,21 +138,24 @@
 				8517D5621C54D091009BB883 /* English_entry+CoreDataProperties.m */,
 				8517D5631C54D091009BB883 /* English_entry.h */,
 				8517D5641C54D091009BB883 /* English_entry.m */,
+				8517D5591C54D091009BB883 /* Entry+CoreDataProperties.h */,
+				8517D55A1C54D091009BB883 /* Entry+CoreDataProperties.m */,
+				8517D55B1C54D091009BB883 /* Entry.h */,
+				8517D55C1C54D091009BB883 /* Entry.m */,
 			);
-			name = "internal Core Data subclasses";
-			path = "CC-CEDICT-downloader";
+			path = "internal Core Data subclasses";
 			sourceTree = "<group>";
 		};
 		85088EFE1C4CD52300396A1B /* CDCCEDICT OS X */ = {
 			isa = PBXGroup;
 			children = (
+				85088F021C4CD52300396A1B /* Supporting Files */,
 				85088EFF1C4CD52300396A1B /* AppDelegate.h */,
 				85088F001C4CD52300396A1B /* AppDelegate.m */,
 				85088F081C4CD52300396A1B /* Assets.xcassets */,
-				85088F0A1C4CD52300396A1B /* MainMenu.xib */,
-				85088F0D1C4CD52300396A1B /* Info.plist */,
 				85088F051C4CD52300396A1B /* CDCCEDICT_OS_X.xcdatamodeld */,
-				85088F021C4CD52300396A1B /* Supporting Files */,
+				85088F0D1C4CD52300396A1B /* Info.plist */,
+				85088F0A1C4CD52300396A1B /* MainMenu.xib */,
 			);
 			path = "CDCCEDICT OS X";
 			sourceTree = "<group>";
@@ -166,20 +165,20 @@
 			children = (
 				85088F031C4CD52300396A1B /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		85088F111C4CD53300396A1B /* CoreDataCCCEDICT */ = {
 			isa = PBXGroup;
 			children = (
 				85088EC51C4A542700396A1B /* internal Core Data subclasses */,
+				85C8B7B01BC155C9004E5F64 /* CC-CEDICT.xcdatamodeld */,
 				85088F121C4CD5EF00396A1B /* CDCCCEDICT.h */,
 				85088F131C4CD5EF00396A1B /* CDCCCEDICT.m */,
 				85088F161C4CD62500396A1B /* CDSyncer.h */,
 				85088F171C4CD62500396A1B /* CDSyncer.m */,
-				85C8B7B01BC155C9004E5F64 /* CC-CEDICT.xcdatamodeld */,
 			);
-			name = CoreDataCCCEDICT;
+			path = CoreDataCCCEDICT;
 			sourceTree = "<group>";
 		};
 		85088F271C4F7A6300396A1B /* Targets */ = {
@@ -189,21 +188,21 @@
 				85C8B78A1BC155AA004E5F64 /* CDCCEDICT iOS */,
 				85C8B7A41BC155AA004E5F64 /* CDCCEDICT iOS tests */,
 			);
-			name = Targets;
+			path = Targets;
 			sourceTree = "<group>";
 		};
 		8517D5501C514CDA009BB883 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Categories;
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		859CBC351C4FFF7100D9F088 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Libs;
+			path = Libs;
 			sourceTree = "<group>";
 		};
 		85C8B77F1BC155AA004E5F64 = {
@@ -211,11 +210,11 @@
 			children = (
 				8517D5501C514CDA009BB883 /* Categories */,
 				85088F111C4CD53300396A1B /* CoreDataCCCEDICT */,
-				85088F271C4F7A6300396A1B /* Targets */,
-				859CBC351C4FFF7100D9F088 /* Libs */,
-				85C8B7891BC155AA004E5F64 /* Products */,
-				A6886455715D43FB2D54DDFF /* Pods */,
 				BF63B3AE55D029DB516EE5B3 /* Frameworks */,
+				859CBC351C4FFF7100D9F088 /* Libs */,
+				A6886455715D43FB2D54DDFF /* Pods */,
+				85C8B7891BC155AA004E5F64 /* Products */,
+				85088F271C4F7A6300396A1B /* Targets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -232,18 +231,17 @@
 		85C8B78A1BC155AA004E5F64 /* CDCCEDICT iOS */ = {
 			isa = PBXGroup;
 			children = (
+				85C8B78B1BC155AA004E5F64 /* Supporting Files */,
 				85C8B78E1BC155AA004E5F64 /* AppDelegate.h */,
 				85C8B78F1BC155AA004E5F64 /* AppDelegate.m */,
+				85C8B7971BC155AA004E5F64 /* Assets.xcassets */,
+				85C8B79C1BC155AA004E5F64 /* Info.plist */,
+				85C8B7991BC155AA004E5F64 /* LaunchScreen.storyboard */,
+				85C8B7941BC155AA004E5F64 /* Main.storyboard */,
 				85C8B7911BC155AA004E5F64 /* ViewController.h */,
 				85C8B7921BC155AA004E5F64 /* ViewController.m */,
-				85C8B7941BC155AA004E5F64 /* Main.storyboard */,
-				85C8B7971BC155AA004E5F64 /* Assets.xcassets */,
-				85C8B7991BC155AA004E5F64 /* LaunchScreen.storyboard */,
-				85C8B79C1BC155AA004E5F64 /* Info.plist */,
-				85C8B78B1BC155AA004E5F64 /* Supporting Files */,
 			);
-			name = "CDCCEDICT iOS";
-			path = "CC-CEDICT-downloader";
+			path = "CDCCEDICT iOS";
 			sourceTree = "<group>";
 		};
 		85C8B78B1BC155AA004E5F64 /* Supporting Files */ = {
@@ -251,7 +249,7 @@
 			children = (
 				85C8B78C1BC155AA004E5F64 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		85C8B7A41BC155AA004E5F64 /* CDCCEDICT iOS tests */ = {
@@ -260,8 +258,7 @@
 				85C8B7A51BC155AA004E5F64 /* CC_CEDICT_downloaderTests.m */,
 				85C8B7A71BC155AA004E5F64 /* Info.plist */,
 			);
-			name = "CDCCEDICT iOS tests";
-			path = "CC-CEDICT-downloaderTests";
+			path = "CDCCEDICT iOS tests";
 			sourceTree = "<group>";
 		};
 		A6886455715D43FB2D54DDFF /* Pods */ = {
@@ -573,6 +570,7 @@
 				85088F0B1C4CD52300396A1B /* Base */,
 			);
 			name = MainMenu.xib;
+			path = .;
 			sourceTree = "<group>";
 		};
 		85C8B7941BC155AA004E5F64 /* Main.storyboard */ = {
@@ -581,6 +579,7 @@
 				85C8B7951BC155AA004E5F64 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		85C8B7991BC155AA004E5F64 /* LaunchScreen.storyboard */ = {
@@ -589,6 +588,7 @@
 				85C8B79A1BC155AA004E5F64 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -602,7 +602,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "CDCCEDICT OS X/Info.plist";
+				INFOPLIST_FILE = "Targets/CDCCEDICT OS X/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -627,7 +627,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "CDCCEDICT OS X/Info.plist";
+				INFOPLIST_FILE = "Targets/CDCCEDICT OS X/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -732,7 +732,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = YES;
-				INFOPLIST_FILE = "CC-CEDICT-downloader/Info.plist";
+				INFOPLIST_FILE = "Targets/CDCCEDICT iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -749,7 +749,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = YES;
-				INFOPLIST_FILE = "CC-CEDICT-downloader/Info.plist";
+				INFOPLIST_FILE = "Targets/CDCCEDICT iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -764,7 +764,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "CC-CEDICT-downloaderTests/Info.plist";
+				INFOPLIST_FILE = "Targets/CDCCEDICT iOS tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.klurig.CC-CEDICT-downloaderTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -776,7 +776,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "CC-CEDICT-downloaderTests/Info.plist";
+				INFOPLIST_FILE = "Targets/CDCCEDICT iOS tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.klurig.CC-CEDICT-downloaderTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -842,8 +842,7 @@
 				85C8B7B11BC155C9004E5F64 /* CC-CEDICT.xcdatamodel */,
 			);
 			currentVersion = 85C8B7B11BC155C9004E5F64 /* CC-CEDICT.xcdatamodel */;
-			name = "CC-CEDICT.xcdatamodeld";
-			path = "CC-CEDICT-downloader/CC-CEDICT.xcdatamodeld";
+			path = "CC-CEDICT.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
