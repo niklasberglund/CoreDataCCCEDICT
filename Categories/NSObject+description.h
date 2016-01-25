@@ -9,6 +9,6 @@
 @interface NSObject (description)
 
 - (NSString *)descriptionWithMembers:(NSDictionary *)memberVariables;
-- (NSString *)descriptionWithAllMembers;
+- (NSString *)descriptionWithAllProperties;
 
 @end

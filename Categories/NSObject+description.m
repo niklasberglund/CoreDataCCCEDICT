@@ -26,15 +26,15 @@
     return descriptionString;
 }
 
-- (NSString *)descriptionWithAllMembers
+- (NSString *)descriptionWithAllProperties
 {
-    NSMutableDictionary *membersDictionary = [NSMutableDictionary new];
+    NSMutableDictionary *propertiesDictionary = [NSMutableDictionary new];
     
     for (NSString *propertyName in [self allProperties]) {
-        [membersDictionary setValue:[self valueForKey:propertyName] forKey:propertyName];
+        [propertiesDictionary setValue:[self valueForKey:propertyName] forKey:propertyName];
     }
     
-    return [self descriptionWithMembers:membersDictionary];
+    return [self descriptionWithMembers:propertiesDictionary];
 }
 
 - (NSArray *)allProperties
