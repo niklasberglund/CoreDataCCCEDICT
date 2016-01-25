@@ -7,6 +7,7 @@
 //
 
 #import "CDTranslationEntry.h"
+#import "NSObject+description.h"
 
 @implementation CDTranslationEntry
 
@@ -27,6 +28,16 @@
 + (CDTranslationEntry *)translationEntryWithTraditionalChinese:(NSString *)traditionalChinese simplifiedChinese:(NSString *)simplifiedChinese pinyin:(NSString *)pinyin englishTranslations:(NSArray<NSString *> *)englishTranslations
 {
     return [[CDTranslationEntry alloc] initWithTraditionalChinese:traditionalChinese simplifiedChinese:simplifiedChinese pinyin:pinyin englishTranslations:englishTranslations];
+}
+
+- (NSString *)description
+{
+    return [self descriptionWithMembers:@{
+                                          @"traditionalChinese:": self.traditionalChinese,
+                                          @"simplifiedChinese": self.simplifiedChinese,
+                                          @"pinyin": self.pinyin,
+                                          @"englishTranslations": self.englishTranslations
+                                          }];
 }
 
 @end
