@@ -9,6 +9,7 @@
 #import "CDSyncer.h"
 #import "CDCCCEDICT.h"
 #import <UZKArchive.h>
+#import "CDTranslationEntry.h"
 
 @implementation CDSyncer
 
@@ -190,6 +191,44 @@
                 NSLog(@"No completionBlock.......");
             }
         } error:&extractError];
+    }
+}
+
+- (void)updateWithData:(NSData *)dictionaryData onCompletion:(void (^)(NSData *, NSError *))completionBlock
+{
+    NSString *dictionaryString = [[NSString alloc] initWithData:dictionaryData encoding:NSUTF8StringEncoding];
+    NSArray *lines = [dictionaryString componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
+    //NSLog(@"%@", lines);
+    
+    for (NSString *line in lines) {
+        // skip commented out and empty lines
+        if (line.length < 1 || [line characterAtIndex:0] == '#') {
+            continue;
+        }
+        
+        NSLog(@"%@", line);
+        
+        NSArray *components = [line componentsSeparatedByString:@"/"];
+        NSString *chineseComponent = components[0];
+        
+        NSString *traditionalChinese;
+        NSString *simplifiedChinese;
+        NSString *pinyin;
+        
+        NSScanner *chineseScanner = [NSScanner scannerWithString:chineseComponent];
+        [chineseScanner scanUpToString:@" " intoString:&traditionalChinese];
+        [chineseScanner scanUpToString:@" [" intoString:&simplifiedChinese];
+        [chineseScanner setScanLocation:[chineseComponent rangeOfString:@" ["].location+2];
+        [chineseScanner scanUpToString:@"]" intoString:&pinyin];
+        
+        NSArray *englishTranslations = [components subarrayWithRange:NSMakeRange(1, components.count - 2)];
+        
+        CDTranslationEntry *translationEntry = [CDTranslationEntry translationEntryWithTraditionalChinese:traditionalChinese simplifiedChinese:simplifiedChinese pinyin:pinyin englishTranslations:englishTranslations];
+        
+        NSLog(@"%@", line);
+        NSLog(@"%@", simplifiedChinese);
+        NSLog(@"%@", traditionalChinese);
+        NSLog(@"%@", pinyin);
     }
 }
 

@@ -31,6 +31,8 @@
 		8517D56E1C54D091009BB883 /* English_entry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8517D5621C54D091009BB883 /* English_entry+CoreDataProperties.m */; };
 		8517D56F1C54D091009BB883 /* English_entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 8517D5641C54D091009BB883 /* English_entry.m */; };
 		8517D5701C54D091009BB883 /* English_entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 8517D5641C54D091009BB883 /* English_entry.m */; };
+		8517D5731C56138F009BB883 /* CDTranslationEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 8517D5721C56138F009BB883 /* CDTranslationEntry.m */; };
+		8517D5741C56138F009BB883 /* CDTranslationEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 8517D5721C56138F009BB883 /* CDTranslationEntry.m */; };
 		85C8B78D1BC155AA004E5F64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C8B78C1BC155AA004E5F64 /* main.m */; };
 		85C8B7901BC155AA004E5F64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C8B78F1BC155AA004E5F64 /* AppDelegate.m */; };
 		85C8B7931BC155AA004E5F64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C8B7921BC155AA004E5F64 /* ViewController.m */; };
@@ -78,6 +80,8 @@
 		8517D5621C54D091009BB883 /* English_entry+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "English_entry+CoreDataProperties.m"; sourceTree = "<group>"; };
 		8517D5631C54D091009BB883 /* English_entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = English_entry.h; sourceTree = "<group>"; };
 		8517D5641C54D091009BB883 /* English_entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = English_entry.m; sourceTree = "<group>"; };
+		8517D5711C56138F009BB883 /* CDTranslationEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTranslationEntry.h; sourceTree = "<group>"; };
+		8517D5721C56138F009BB883 /* CDTranslationEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTranslationEntry.m; sourceTree = "<group>"; };
 		859CBC331C4FD67C00D9F088 /* libGZIP.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGZIP.a; path = "Pods/../build/Debug-iphoneos/libGZIP.a"; sourceTree = "<group>"; };
 		85C8B7881BC155AA004E5F64 /* CC-CEDICT-downloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CC-CEDICT-downloader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C8B78C1BC155AA004E5F64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -177,6 +181,8 @@
 				85088F131C4CD5EF00396A1B /* CDCCCEDICT.m */,
 				85088F161C4CD62500396A1B /* CDSyncer.h */,
 				85088F171C4CD62500396A1B /* CDSyncer.m */,
+				8517D5711C56138F009BB883 /* CDTranslationEntry.h */,
+				8517D5721C56138F009BB883 /* CDTranslationEntry.m */,
 			);
 			path = CoreDataCCCEDICT;
 			sourceTree = "<group>";
@@ -514,6 +520,7 @@
 				85088F1A1C4F756700396A1B /* CC-CEDICT.xcdatamodeld in Sources */,
 				8517D5661C54D091009BB883 /* Entry+CoreDataProperties.m in Sources */,
 				85088F151C4CD5EF00396A1B /* CDCCCEDICT.m in Sources */,
+				8517D5741C56138F009BB883 /* CDTranslationEntry.m in Sources */,
 				85088F041C4CD52300396A1B /* main.m in Sources */,
 				8517D56A1C54D091009BB883 /* Chinese_entry+CoreDataProperties.m in Sources */,
 				8517D5681C54D091009BB883 /* Entry.m in Sources */,
@@ -533,6 +540,7 @@
 				85C8B7931BC155AA004E5F64 /* ViewController.m in Sources */,
 				8517D5651C54D091009BB883 /* Entry+CoreDataProperties.m in Sources */,
 				85088F141C4CD5EF00396A1B /* CDCCCEDICT.m in Sources */,
+				8517D5731C56138F009BB883 /* CDTranslationEntry.m in Sources */,
 				85C8B7B21BC155C9004E5F64 /* CC-CEDICT.xcdatamodeld in Sources */,
 				8517D5691C54D091009BB883 /* Chinese_entry+CoreDataProperties.m in Sources */,
 				8517D5671C54D091009BB883 /* Entry.m in Sources */,

@@ -22,5 +22,6 @@
 - (void)getLatestDataInfoOnCompletion:(void (^)(NSDictionary *databaseInfo, NSError *error))completionBlock;
 - (void)getDataFileFromURL:(NSURL *)url onCompletion:(void (^)(NSData *data, NSError *error))completionBlock;
 - (void)getDataFileFromURL:(NSURL *)url onCompletion:(void (^)(NSData *data, NSError *error))completionBlock onProgress:(void (^)(NSNumber *percentage))progressBlock;
+- (void)updateWithData:(NSData *)dictionaryData onCompletion:(void (^)(NSData *data, NSError *error))completionBlock;
 
 @end
