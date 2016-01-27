@@ -23,7 +23,7 @@
 
 #pragma mark - creation of NSManagedObjects for this translation
 - (NSManagedObject *)chineseManagedObjecInManagedObjectContext:(NSManagedObjectContext *)managedObjectContext;
-- (NSArray<English_entry *> *)englishManagedObjectsInManagedObjectContext:(NSManagedObjectContext *)managedObjectContext;
-- (NSManagedObject *)entryManagedObjectWithChinese:(NSManagedObject *)chineseManagedObject english:(NSArray<English_entry *> *)englishManagedObjects inManagedObjectContext:(NSManagedObjectContext *)managedObjectContext;
+- (NSArray<NSManagedObject *> *)englishManagedObjectsInManagedObjectContext:(NSManagedObjectContext *)managedObjectContext;
+- (NSManagedObject *)entryManagedObjectWithChinese:(NSManagedObject *)chineseManagedObject english:(NSArray<NSManagedObject *> *)englishManagedObjects date:(NSDate *)databaseDate inManagedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 
 @end
