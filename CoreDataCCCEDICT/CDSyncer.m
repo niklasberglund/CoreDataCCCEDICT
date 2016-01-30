@@ -222,8 +222,32 @@
     self.status = CDSyncerStatusImportingDatabase;
     
     NSString *dictionaryString = [[NSString alloc] initWithData:dictionaryData encoding:NSUTF8StringEncoding];
-    NSArray *lines = [dictionaryString componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
+    NSMutableArray *lines = (NSMutableArray *)[dictionaryString componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
     NSDate *databaseUpdateDate; // set further down
+    
+    int commentsUpToLineIndex = 0; // comments range from line 0 to this index
+    
+    // check how many commented out lines there are at the top of document, and read db info lines in the process(#!)
+    for (NSString *line in lines) {
+        if (line.length < 1) {
+            commentsUpToLineIndex++;
+        }
+        else if ([line characterAtIndex:0] == '#') {
+            if ([line characterAtIndex:1] == '!') { // lines starting with #! contains db info
+                if ([line containsString:@"#! time="]) {
+                    NSString *databaseTimestampString = [line substringFromIndex:8];
+                    databaseUpdateDate = [NSDate dateWithTimeIntervalSince1970:[databaseTimestampString intValue]];
+                }
+            }
+            
+            commentsUpToLineIndex++;
+        }
+        else {
+            [lines removeObjectsInRange:NSMakeRange(0, commentsUpToLineIndex)];
+            break;
+        }
+    }
+    
     
     // iterate over all lines in file
     for (NSString *line in lines) {
