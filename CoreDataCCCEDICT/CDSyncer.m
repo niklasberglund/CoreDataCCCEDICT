@@ -243,6 +243,7 @@
             commentsUpToLineIndex++;
         }
         else {
+            // found all commented out(or empty) lines. removing them from lines NSArray
             [lines removeObjectsInRange:NSMakeRange(0, commentsUpToLineIndex)];
             break;
         }
