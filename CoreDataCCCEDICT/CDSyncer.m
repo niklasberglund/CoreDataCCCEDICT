@@ -254,23 +254,17 @@
     
     int currentLineIndex = 0;
     
+    // for storing created entry NSManagedObject instances
+    NSMutableArray *entryManagedObjects = [NSMutableArray new];
+    
     // iterate over all lines in file
     for (NSString *line in lines) {
-        // skip commented out and empty lines
+        // skip empty lines
         if (line.length < 1) {
+            currentLineIndex++;
             continue;
         }
-        else if ([line characterAtIndex:0] == '#') {
-            if ([line characterAtIndex:1] == '!') { // lines starting with #! contains db info
-                if ([line containsString:@"#! time="]) {
-                    NSString *databaseTimestampString = [line substringFromIndex:8];
-                    databaseUpdateDate = [NSDate dateWithTimeIntervalSince1970:[databaseTimestampString intValue]];
-                    NSLog(@"%@", databaseUpdateDate);
-                }
-            }
-            
-            continue;
-        }
+        
         
         //NSLog(@"%@", line);
         
@@ -295,9 +289,7 @@
         NSManagedObject *chineseManagedObject = [translationEntry chineseManagedObjecInManagedObjectContext:managedObjectContext];
         NSArray *englishManagedObjectsArray = [translationEntry englishManagedObjectsInManagedObjectContext:managedObjectContext];
         NSManagedObject *entryManagedObject = [translationEntry entryManagedObjectWithChinese:chineseManagedObject english:englishManagedObjectsArray date:[NSDate date] inManagedObjectContext:managedObjectContext];
-        
-        [CDCCCEDICT saveContext];
-        
+        [entryManagedObjects addObject:entryManagedObject];
         
         //NSLog(@"%@", line);
         //NSLog(@"%@", simplifiedChinese);
@@ -307,6 +299,8 @@
         currentLineIndex++;
         self.importedDatabaseEntries = currentLineIndex;
     }
+    
+    [CDCCCEDICT saveContext];
 }
 
 @end
