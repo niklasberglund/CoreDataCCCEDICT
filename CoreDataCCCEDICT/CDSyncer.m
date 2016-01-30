@@ -198,11 +198,23 @@
 {
     NSString *dictionaryString = [[NSString alloc] initWithData:dictionaryData encoding:NSUTF8StringEncoding];
     NSArray *lines = [dictionaryString componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
-    //NSLog(@"%@", lines);
+    NSDate *databaseUpdateDate; // set further down
     
+    // iterate over all lines in file
     for (NSString *line in lines) {
         // skip commented out and empty lines
-        if (line.length < 1 || [line characterAtIndex:0] == '#') {
+        if (line.length < 1) {
+            continue;
+        }
+        else if ([line characterAtIndex:0] == '#') {
+            if ([line characterAtIndex:1] == '!') { // lines starting with #! contains db info
+                if ([line containsString:@"#! time="]) {
+                    NSString *databaseTimestampString = [line substringFromIndex:8];
+                    databaseUpdateDate = [NSDate dateWithTimeIntervalSince1970:[databaseTimestampString intValue]];
+                    NSLog(@"%@", databaseUpdateDate);
+                }
+            }
+            
             continue;
         }
         
@@ -224,6 +236,14 @@
         NSArray *englishTranslations = [components subarrayWithRange:NSMakeRange(1, components.count - 2)];
         
         CDTranslationEntry *translationEntry = [CDTranslationEntry translationEntryWithTraditionalChinese:traditionalChinese simplifiedChinese:simplifiedChinese pinyin:pinyin englishTranslations:englishTranslations];
+        
+        NSManagedObjectContext *managedObjectContext = [CDCCCEDICT managedObjectContext];
+        NSManagedObject *chineseManagedObject = [translationEntry chineseManagedObjecInManagedObjectContext:managedObjectContext];
+        NSArray *englishManagedObjectsArray = [translationEntry englishManagedObjectsInManagedObjectContext:managedObjectContext];
+        NSManagedObject *entryManagedObject = [translationEntry entryManagedObjectWithChinese:chineseManagedObject english:englishManagedObjectsArray date:[NSDate date] inManagedObjectContext:managedObjectContext];
+        
+        [CDCCCEDICT saveContext];
+        
         
         NSLog(@"%@", line);
         NSLog(@"%@", simplifiedChinese);
