@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "CDCCCEDICT.h"
+#import <NSTimer+Blocks.h>
 
 @interface AppDelegate ()
 
@@ -27,16 +28,24 @@
         NSLog(@"%@", databaseInfo[@"gzipArchiveURL"]);
         NSLog(@"%@", error);
         
-        NSURL *zipArchiveURL = databaseInfo[@"zipArchiveURL"];
-        //NSURL *zipArchiveURL = [NSURL URLWithString:@"file:///Users/niklas/htdocs/CC-CEDICT/cedict_1_0_ts_utf-8_mdbg.zip"];
+        //NSURL *zipArchiveURL = databaseInfo[@"zipArchiveURL"];
+        NSURL *zipArchiveURL = [NSURL URLWithString:@"file:///Users/niklas/htdocs/CC-CEDICT/cedict_1_0_ts_utf-8_mdbg.zip"];
         
         [syncer getDataFileFromURL:zipArchiveURL onCompletion:^(NSData *data, NSError *error) {
             NSLog(@"In completion block");
-            NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+            //NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+            [syncer updateWithData:data onCompletion:^(NSData *data, NSError *error) {
+                NSLog(@"Finished updating");
+            }];
         } onProgress:^(NSNumber *progress) {
             NSLog(@"In progress block");
             NSLog(@"%@", progress);
         }];
+        
+        // poll syncer.importedDatabaseEntries for import progress
+        [NSTimer scheduledTimerWithTimeInterval:0.5 block:^{
+            NSLog(@"Imported %lu out of %lu entries", syncer.importedDatabaseEntries, syncer.totalDatabaseEntries);
+        } repeats:YES];
     }];
 }
 
