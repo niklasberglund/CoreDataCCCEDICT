@@ -7,6 +7,7 @@ platforms = { :ios => "8.0", :osx => "10.9" }
 
 target 'CC-CEDICT-downloader' do
     pod 'UnzipKit'
+    pod 'NSTimer-Blocks'
 end
 
 target 'CC-CEDICT-downloaderTests' do
@@ -15,5 +16,6 @@ end
 
 target 'CDCCCEDICT OS X' do
     pod 'UnzipKit'
+    pod 'NSTimer-Blocks'
 end
 
