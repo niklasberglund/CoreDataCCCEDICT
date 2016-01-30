@@ -11,6 +11,15 @@
 
 @interface CDSyncer : NSObject<NSURLSessionDelegate, NSURLSessionTaskDelegate>
 
+typedef NS_ENUM(NSUInteger, CDSyncerStatus) {
+    CDSyncerStatusIdle,
+    CDSyncerStatusCheckingDatabaseInfo,
+    CDSyncerStatusDownloadingDatabase,
+    CDSyncerStatusImportingDatabase
+};
+
+@property (nonatomic, assign) int status;
+
 @property (nonatomic, strong) NSMutableData *downloadedData;
 @property (nonatomic, assign) long long dataSize;
 

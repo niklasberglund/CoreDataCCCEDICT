@@ -13,6 +13,17 @@
 
 @implementation CDSyncer
 
+- (id)init
+{
+    self = [super init];
+    
+    if (self) {
+        self.status = CDSyncerStatusIdle;
+    }
+    
+    return self;
+}
+
 - (void)testStore
 {
     // store test
@@ -61,10 +72,14 @@
 #pragma mark - CC-CEDICT download
 - (void)getLatestDataInfoOnCompletion:(void (^)(NSDictionary *databaseInfo, NSError *error))completionBlock
 {
+    self.status = CDSyncerStatusCheckingDatabaseInfo;
+    
     NSError *error;
     NSString *result = [NSString stringWithContentsOfURL:[NSURL URLWithString:@"https://www.mdbg.net/chindict/chindict.php?page=cc-cedict"] encoding:NSUTF8StringEncoding error:&error];
     
     if (error) {
+        self.status = CDSyncerStatusIdle;
+        
         completionBlock(nil, error);
         return;
     }
@@ -124,12 +139,16 @@
                                  @"gzipArchiveURL": gzipArchiveURL
                                  };
     
+    self.status = CDSyncerStatusIdle; // go into idle state before downloading is triggered
+    
     completionBlock(resultDict, error);
 }
 
 - (void)getDataFileFromURL:(NSURL *)url onCompletion:(void (^)(NSData *data, NSError *error))completionBlock
 {
     self.completionBlock = completionBlock;
+    
+    self.status = CDSyncerStatusDownloadingDatabase;
     
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:nil];
     NSURLSessionDataTask *dataTask = [session dataTaskWithURL:url];
@@ -140,6 +159,8 @@
 {
     self.completionBlock = completionBlock;
     self.progressBlock = progressBlock;
+    
+    self.status = CDSyncerStatusDownloadingDatabase;
     
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:nil];
     NSURLSessionDataTask *dataTask = [session dataTaskWithURL:url];
@@ -183,6 +204,8 @@
             
             NSError *readFileError = nil;
             
+            self.status = CDSyncerStatusIdle;
+            
             // invoke completionBlock
             if (self.completionBlock) {
                 self.completionBlock([NSData dataWithContentsOfURL:extractedFileURL], readFileError);
@@ -196,6 +219,8 @@
 
 - (void)updateWithData:(NSData *)dictionaryData onCompletion:(void (^)(NSData *, NSError *))completionBlock
 {
+    self.status = CDSyncerStatusImportingDatabase;
+    
     NSString *dictionaryString = [[NSString alloc] initWithData:dictionaryData encoding:NSUTF8StringEncoding];
     NSArray *lines = [dictionaryString componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
     NSDate *databaseUpdateDate; // set further down
