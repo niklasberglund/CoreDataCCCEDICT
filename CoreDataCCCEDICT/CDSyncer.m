@@ -249,6 +249,10 @@
         }
     }
     
+    self.totalDatabaseEntries = lines.count;
+    self.importedDatabaseEntries = 0;
+    
+    int currentLineIndex = 0;
     
     // iterate over all lines in file
     for (NSString *line in lines) {
@@ -299,6 +303,9 @@
         NSLog(@"%@", simplifiedChinese);
         NSLog(@"%@", traditionalChinese);
         NSLog(@"%@", pinyin);
+        
+        currentLineIndex++;
+        self.importedDatabaseEntries = currentLineIndex;
     }
 }
 

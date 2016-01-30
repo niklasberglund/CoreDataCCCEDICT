@@ -19,6 +19,8 @@ typedef NS_ENUM(NSUInteger, CDSyncerStatus) {
 };
 
 @property (nonatomic, assign) NSUInteger status;
+@property (nonatomic, assign) NSUInteger totalDatabaseEntries;
+@property (nonatomic, assign) NSUInteger importedDatabaseEntries;
 
 @property (nonatomic, strong) NSMutableData *downloadedData;
 @property (nonatomic, assign) long long dataSize;
