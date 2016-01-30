@@ -272,7 +272,7 @@
             continue;
         }
         
-        NSLog(@"%@", line);
+        //NSLog(@"%@", line);
         
         NSArray *components = [line componentsSeparatedByString:@"/"];
         NSString *chineseComponent = components[0];
@@ -299,10 +299,10 @@
         [CDCCCEDICT saveContext];
         
         
-        NSLog(@"%@", line);
-        NSLog(@"%@", simplifiedChinese);
-        NSLog(@"%@", traditionalChinese);
-        NSLog(@"%@", pinyin);
+        //NSLog(@"%@", line);
+        //NSLog(@"%@", simplifiedChinese);
+        //NSLog(@"%@", traditionalChinese);
+        //NSLog(@"%@", pinyin);
         
         currentLineIndex++;
         self.importedDatabaseEntries = currentLineIndex;
