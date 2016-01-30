@@ -1,10 +1,15 @@
 PODS:
+  - NSTimer-Blocks (0.0.1)
   - UnzipKit (1.6.1)
 
 DEPENDENCIES:
+  - NSTimer-Blocks
   - UnzipKit
 
 SPEC CHECKSUMS:
+  NSTimer-Blocks: 88faf9aef5f250ead087f3f67ae642517083bf36
   UnzipKit: b75d1d81570b53fc4aa3415627e32dfce256f0e0
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: e2c64f02d8b0cccc4201055c4163633d1258089f
+
+COCOAPODS: 1.0.0.beta.2

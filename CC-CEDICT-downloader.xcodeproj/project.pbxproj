@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		222E8AA4751F545C05BD3B91 /* libPods-CDCCCEDICT OS X.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63815CEFBFA73EDDCB57051F /* libPods-CDCCCEDICT OS X.a */; };
-		5C1F293280BAF4FBA7696483 /* libPods-CC-CEDICT-downloader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A912F4C344E677A89D704762 /* libPods-CC-CEDICT-downloader.a */; };
 		85088F011C4CD52300396A1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088F001C4CD52300396A1B /* AppDelegate.m */; };
 		85088F041C4CD52300396A1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85088F031C4CD52300396A1B /* main.m */; };
 		85088F071C4CD52300396A1B /* CDCCEDICT_OS_X.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85088F051C4CD52300396A1B /* CDCCEDICT_OS_X.xcdatamodeld */; };
@@ -43,6 +41,9 @@
 		85C8B79B1BC155AA004E5F64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C8B7991BC155AA004E5F64 /* LaunchScreen.storyboard */; };
 		85C8B7A61BC155AA004E5F64 /* CC_CEDICT_downloaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C8B7A51BC155AA004E5F64 /* CC_CEDICT_downloaderTests.m */; };
 		85C8B7B21BC155C9004E5F64 /* CC-CEDICT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85C8B7B01BC155C9004E5F64 /* CC-CEDICT.xcdatamodeld */; };
+		9FDC7E7377D0AFDCB4988A45 /* libPods-CDCCCEDICT OS X.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C8610C67A3FD65A84ED39C /* libPods-CDCCCEDICT OS X.a */; };
+		BAFE7A94CBE993201FD0B355 /* libPods-CC-CEDICT-downloader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 982053EFA4011EDB957E4865 /* libPods-CC-CEDICT-downloader.a */; };
+		C80D159DDA9EE5D0A878657B /* libPods-CC-CEDICT-downloaderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4987E77A69ECD2AB0809FCD /* libPods-CC-CEDICT-downloaderTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		045357DA6115D64E4045D0F6 /* Pods-CDCCCEDICT OS X.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDCCCEDICT OS X.release.xcconfig"; path = "Pods/Target Support Files/Pods-CDCCCEDICT OS X/Pods-CDCCCEDICT OS X.release.xcconfig"; sourceTree = "<group>"; };
-		63815CEFBFA73EDDCB57051F /* libPods-CDCCCEDICT OS X.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CDCCCEDICT OS X.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		012C0FA0E35C4A6446513526 /* Pods-CC-CEDICT-downloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CC-CEDICT-downloader.release.xcconfig"; path = "Pods/Target Support Files/Pods-CC-CEDICT-downloader/Pods-CC-CEDICT-downloader.release.xcconfig"; sourceTree = "<group>"; };
+		37A48961BC665445D4FB1768 /* Pods-CC-CEDICT-downloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CC-CEDICT-downloader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CC-CEDICT-downloader/Pods-CC-CEDICT-downloader.debug.xcconfig"; sourceTree = "<group>"; };
+		52C8610C67A3FD65A84ED39C /* libPods-CDCCCEDICT OS X.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CDCCCEDICT OS X.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85088EFD1C4CD52300396A1B /* CDCCCEDICT OS X.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CDCCCEDICT OS X.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85088EFF1C4CD52300396A1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		85088F001C4CD52300396A1B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,11 +103,12 @@
 		85C8B7A51BC155AA004E5F64 /* CC_CEDICT_downloaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CC_CEDICT_downloaderTests.m; sourceTree = "<group>"; };
 		85C8B7A71BC155AA004E5F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85C8B7B11BC155C9004E5F64 /* CC-CEDICT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CC-CEDICT.xcdatamodel"; sourceTree = "<group>"; };
-		86648C17A58FCAF73342CB7F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A912F4C344E677A89D704762 /* libPods-CC-CEDICT-downloader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CC-CEDICT-downloader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC23E36D81B41F8B97E7155A /* Pods-CC-CEDICT-downloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CC-CEDICT-downloader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CC-CEDICT-downloader/Pods-CC-CEDICT-downloader.debug.xcconfig"; sourceTree = "<group>"; };
-		D93D0D87C9CB7C51767659F0 /* Pods-CC-CEDICT-downloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CC-CEDICT-downloader.release.xcconfig"; path = "Pods/Target Support Files/Pods-CC-CEDICT-downloader/Pods-CC-CEDICT-downloader.release.xcconfig"; sourceTree = "<group>"; };
-		F672B88524392E7CFB9FA0DE /* Pods-CDCCCEDICT OS X.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDCCCEDICT OS X.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CDCCCEDICT OS X/Pods-CDCCCEDICT OS X.debug.xcconfig"; sourceTree = "<group>"; };
+		8C4768310F2EBC264BDAD1AF /* Pods-CDCCCEDICT OS X.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDCCCEDICT OS X.release.xcconfig"; path = "Pods/Target Support Files/Pods-CDCCCEDICT OS X/Pods-CDCCCEDICT OS X.release.xcconfig"; sourceTree = "<group>"; };
+		982053EFA4011EDB957E4865 /* libPods-CC-CEDICT-downloader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CC-CEDICT-downloader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB53768C5E8B7559482E875 /* Pods-CC-CEDICT-downloaderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CC-CEDICT-downloaderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CC-CEDICT-downloaderTests/Pods-CC-CEDICT-downloaderTests.release.xcconfig"; sourceTree = "<group>"; };
+		A4987E77A69ECD2AB0809FCD /* libPods-CC-CEDICT-downloaderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CC-CEDICT-downloaderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF0425357E12E2010199CED /* Pods-CDCCCEDICT OS X.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDCCCEDICT OS X.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CDCCCEDICT OS X/Pods-CDCCCEDICT OS X.debug.xcconfig"; sourceTree = "<group>"; };
+		C3E2130C738362051EEA1935 /* Pods-CC-CEDICT-downloaderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CC-CEDICT-downloaderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CC-CEDICT-downloaderTests/Pods-CC-CEDICT-downloaderTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				222E8AA4751F545C05BD3B91 /* libPods-CDCCCEDICT OS X.a in Frameworks */,
+				9FDC7E7377D0AFDCB4988A45 /* libPods-CDCCCEDICT OS X.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C1F293280BAF4FBA7696483 /* libPods-CC-CEDICT-downloader.a in Frameworks */,
+				BAFE7A94CBE993201FD0B355 /* libPods-CC-CEDICT-downloader.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,12 +132,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C80D159DDA9EE5D0A878657B /* libPods-CC-CEDICT-downloaderTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6932A609A358A4FAB2621FAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37A48961BC665445D4FB1768 /* Pods-CC-CEDICT-downloader.debug.xcconfig */,
+				012C0FA0E35C4A6446513526 /* Pods-CC-CEDICT-downloader.release.xcconfig */,
+				C3E2130C738362051EEA1935 /* Pods-CC-CEDICT-downloaderTests.debug.xcconfig */,
+				9AB53768C5E8B7559482E875 /* Pods-CC-CEDICT-downloaderTests.release.xcconfig */,
+				BAF0425357E12E2010199CED /* Pods-CDCCCEDICT OS X.debug.xcconfig */,
+				8C4768310F2EBC264BDAD1AF /* Pods-CDCCCEDICT OS X.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		85088EC51C4A542700396A1B /* internal Core Data subclasses */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,9 +241,9 @@
 				85088F111C4CD53300396A1B /* CoreDataCCCEDICT */,
 				BF63B3AE55D029DB516EE5B3 /* Frameworks */,
 				859CBC351C4FFF7100D9F088 /* Libs */,
-				A6886455715D43FB2D54DDFF /* Pods */,
 				85C8B7891BC155AA004E5F64 /* Products */,
 				85088F271C4F7A6300396A1B /* Targets */,
+				6932A609A358A4FAB2621FAD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -273,24 +290,13 @@
 			path = "CDCCEDICT iOS tests";
 			sourceTree = "<group>";
 		};
-		A6886455715D43FB2D54DDFF /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CC23E36D81B41F8B97E7155A /* Pods-CC-CEDICT-downloader.debug.xcconfig */,
-				D93D0D87C9CB7C51767659F0 /* Pods-CC-CEDICT-downloader.release.xcconfig */,
-				F672B88524392E7CFB9FA0DE /* Pods-CDCCCEDICT OS X.debug.xcconfig */,
-				045357DA6115D64E4045D0F6 /* Pods-CDCCCEDICT OS X.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		BF63B3AE55D029DB516EE5B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				859CBC331C4FD67C00D9F088 /* libGZIP.a */,
-				A912F4C344E677A89D704762 /* libPods-CC-CEDICT-downloader.a */,
-				86648C17A58FCAF73342CB7F /* libPods.a */,
-				63815CEFBFA73EDDCB57051F /* libPods-CDCCCEDICT OS X.a */,
+				982053EFA4011EDB957E4865 /* libPods-CC-CEDICT-downloader.a */,
+				A4987E77A69ECD2AB0809FCD /* libPods-CC-CEDICT-downloaderTests.a */,
+				52C8610C67A3FD65A84ED39C /* libPods-CDCCCEDICT OS X.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -302,12 +308,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85088F101C4CD52300396A1B /* Build configuration list for PBXNativeTarget "CDCCCEDICT OS X" */;
 			buildPhases = (
-				8EA00643E6890A92BE1D49C4 /* Check Pods Manifest.lock */,
+				86C81DFF0CA0D8A609B34D4A /* Check Pods Manifest.lock */,
 				85088EF91C4CD52300396A1B /* Sources */,
 				85088EFA1C4CD52300396A1B /* Frameworks */,
 				85088EFB1C4CD52300396A1B /* Resources */,
-				DA8E421ABBF6D2252FE430A2 /* Embed Pods Frameworks */,
-				08714D613AC26DA94CE57D95 /* Copy Pods Resources */,
+				D0CAE10568B03563E03837A8 /* Embed Pods Frameworks */,
+				DCF255F6F45F170C14071A38 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -322,12 +328,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85C8B7AA1BC155AA004E5F64 /* Build configuration list for PBXNativeTarget "CC-CEDICT-downloader" */;
 			buildPhases = (
-				D6F8F0161B1D81B29169577F /* Check Pods Manifest.lock */,
+				7F2D2A94F659969CE6A3D5BE /* Check Pods Manifest.lock */,
 				85C8B7841BC155AA004E5F64 /* Sources */,
 				85C8B7851BC155AA004E5F64 /* Frameworks */,
 				85C8B7861BC155AA004E5F64 /* Resources */,
-				3F821D7F37BC85688E7B8EEE /* Embed Pods Frameworks */,
-				6368734D59237D943A5F0D13 /* Copy Pods Resources */,
+				AFCCE1732E7860DE543B7F95 /* Embed Pods Frameworks */,
+				0A2ED3C33B5731DD03E1DA98 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -342,9 +348,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85C8B7AD1BC155AA004E5F64 /* Build configuration list for PBXNativeTarget "CC-CEDICT-downloaderTests" */;
 			buildPhases = (
+				FB1DDE0ED4D12C61AF2BE30C /* Check Pods Manifest.lock */,
 				85C8B79D1BC155AA004E5F64 /* Sources */,
 				85C8B79E1BC155AA004E5F64 /* Frameworks */,
 				85C8B79F1BC155AA004E5F64 /* Resources */,
+				394FB2A444AD8F8B48A3BFCD /* Embed Pods Frameworks */,
+				27CEDD5B850D2D92885759B1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -426,37 +435,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		08714D613AC26DA94CE57D95 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CDCCCEDICT OS X/Pods-CDCCCEDICT OS X-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3F821D7F37BC85688E7B8EEE /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CC-CEDICT-downloader/Pods-CC-CEDICT-downloader-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6368734D59237D943A5F0D13 /* Copy Pods Resources */ = {
+		0A2ED3C33B5731DD03E1DA98 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -471,7 +450,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CC-CEDICT-downloader/Pods-CC-CEDICT-downloader-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8EA00643E6890A92BE1D49C4 /* Check Pods Manifest.lock */ = {
+		27CEDD5B850D2D92885759B1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CC-CEDICT-downloaderTests/Pods-CC-CEDICT-downloaderTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		394FB2A444AD8F8B48A3BFCD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CC-CEDICT-downloaderTests/Pods-CC-CEDICT-downloaderTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F2D2A94F659969CE6A3D5BE /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -486,7 +495,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		D6F8F0161B1D81B29169577F /* Check Pods Manifest.lock */ = {
+		86C81DFF0CA0D8A609B34D4A /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -501,7 +510,22 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		DA8E421ABBF6D2252FE430A2 /* Embed Pods Frameworks */ = {
+		AFCCE1732E7860DE543B7F95 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CC-CEDICT-downloader/Pods-CC-CEDICT-downloader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0CAE10568B03563E03837A8 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -514,6 +538,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CDCCCEDICT OS X/Pods-CDCCCEDICT OS X-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCF255F6F45F170C14071A38 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CDCCCEDICT OS X/Pods-CDCCCEDICT OS X-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB1DDE0ED4D12C61AF2BE30C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -612,7 +666,7 @@
 /* Begin XCBuildConfiguration section */
 		85088F0E1C4CD52300396A1B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F672B88524392E7CFB9FA0DE /* Pods-CDCCCEDICT OS X.debug.xcconfig */;
+			baseConfigurationReference = BAF0425357E12E2010199CED /* Pods-CDCCCEDICT OS X.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
@@ -637,7 +691,7 @@
 		};
 		85088F0F1C4CD52300396A1B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 045357DA6115D64E4045D0F6 /* Pods-CDCCCEDICT OS X.release.xcconfig */;
+			baseConfigurationReference = 8C4768310F2EBC264BDAD1AF /* Pods-CDCCCEDICT OS X.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
@@ -744,7 +798,7 @@
 		};
 		85C8B7AB1BC155AA004E5F64 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC23E36D81B41F8B97E7155A /* Pods-CC-CEDICT-downloader.debug.xcconfig */;
+			baseConfigurationReference = 37A48961BC665445D4FB1768 /* Pods-CC-CEDICT-downloader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = YES;
@@ -761,7 +815,7 @@
 		};
 		85C8B7AC1BC155AA004E5F64 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D93D0D87C9CB7C51767659F0 /* Pods-CC-CEDICT-downloader.release.xcconfig */;
+			baseConfigurationReference = 012C0FA0E35C4A6446513526 /* Pods-CC-CEDICT-downloader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = YES;
@@ -778,6 +832,7 @@
 		};
 		85C8B7AE1BC155AA004E5F64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3E2130C738362051EEA1935 /* Pods-CC-CEDICT-downloaderTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Targets/CDCCEDICT iOS tests/Info.plist";
@@ -790,6 +845,7 @@
 		};
 		85C8B7AF1BC155AA004E5F64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AB53768C5E8B7559482E875 /* Pods-CC-CEDICT-downloaderTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Targets/CDCCEDICT iOS tests/Info.plist";
